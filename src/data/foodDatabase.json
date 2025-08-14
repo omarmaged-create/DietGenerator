@@ -1,0 +1,4502 @@
+[
+  {
+    "id": 1,
+    "name_en": "Chicken Breast (Skinless)",
+    "name_ar": "صدر دجاج بدون جلد",
+    "calories_per_100g": 165,
+    "protein_g_per_100g": 31,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 3.6
+  },
+  {
+    "id": 2,
+    "name_en": "White Fish (Cod)",
+    "name_ar": "سمك أبيض (قد)",
+    "calories_per_100g": 82,
+    "protein_g_per_100g": 18,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 3,
+    "name_en": "Salmon",
+    "name_ar": "سلمون",
+    "calories_per_100g": 142,
+    "protein_g_per_100g": 19.8,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 6.3
+  },
+  {
+    "id": 4,
+    "name_en": "Brown Rice (Cooked)",
+    "name_ar": "أرز بني مطبوخ",
+    "calories_per_100g": 112,
+    "protein_g_per_100g": 2.3,
+    "carbs_g_per_100g": 22,
+    "fat_g_per_100g": 0.9
+  },
+  {
+    "id": 5,
+    "name_en": "White Rice (Cooked)",
+    "name_ar": "أرز أبيض مطبوخ",
+    "calories_per_100g": 130,
+    "protein_g_per_100g": 2.7,
+    "carbs_g_per_100g": 28,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 6,
+    "name_en": "Sweet Potato",
+    "name_ar": "بطاطا حلوة",
+    "calories_per_100g": 86,
+    "protein_g_per_100g": 1.6,
+    "carbs_g_per_100g": 20,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 7,
+    "name_en": "Oatmeal",
+    "name_ar": "شوفان",
+    "calories_per_100g": 389,
+    "protein_g_per_100g": 16.9,
+    "carbs_g_per_100g": 66,
+    "fat_g_per_100g": 6.9
+  },
+  {
+    "id": 8,
+    "name_en": "Eggs (Whole)",
+    "name_ar": "بيض كامل",
+    "calories_per_100g": 143,
+    "protein_g_per_100g": 12.6,
+    "carbs_g_per_100g": 1.1,
+    "fat_g_per_100g": 9.5
+  },
+  {
+    "id": 9,
+    "name_en": "Egg Whites",
+    "name_ar": "بياض البيض",
+    "calories_per_100g": 52,
+    "protein_g_per_100g": 11,
+    "carbs_g_per_100g": 0.7,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 10,
+    "name_en": "Greek Yogurt (0% Fat)",
+    "name_ar": "زبادي يوناني خالي الدسم",
+    "calories_per_100g": 59,
+    "protein_g_per_100g": 10,
+    "carbs_g_per_100g": 3.6,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 11,
+    "name_en": "Almonds",
+    "name_ar": "لوز",
+    "calories_per_100g": 579,
+    "protein_g_per_100g": 21,
+    "carbs_g_per_100g": 22,
+    "fat_g_per_100g": 50
+  },
+  {
+    "id": 12,
+    "name_en": "Olive Oil",
+    "name_ar": "زيت زيتون",
+    "calories_per_100g": 884,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 100
+  },
+  {
+    "id": 13,
+    "name_en": "Avocado",
+    "name_ar": "أفوكادو",
+    "calories_per_100g": 160,
+    "protein_g_per_100g": 2,
+    "carbs_g_per_100g": 9,
+    "fat_g_per_100g": 15
+  },
+  {
+    "id": 14,
+    "name_en": "Broccoli",
+    "name_ar": "بروكلي",
+    "calories_per_100g": 34,
+    "protein_g_per_100g": 2.8,
+    "carbs_g_per_100g": 7,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 15,
+    "name_en": "Spinach",
+    "name_ar": "سبانخ",
+    "calories_per_100g": 23,
+    "protein_g_per_100g": 2.9,
+    "carbs_g_per_100g": 3.6,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 16,
+    "name_en": "Banana",
+    "name_ar": "موز",
+    "calories_per_100g": 89,
+    "protein_g_per_100g": 1.1,
+    "carbs_g_per_100g": 23,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 17,
+    "name_en": "Apple",
+    "name_ar": "تفاح",
+    "calories_per_100g": 52,
+    "protein_g_per_100g": 0.3,
+    "carbs_g_per_100g": 14,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 18,
+    "name_en": "Whey Protein Powder",
+    "name_ar": "مسحوق بروتين مصل اللبن",
+    "calories_per_100g": 400,
+    "protein_g_per_100g": 80,
+    "carbs_g_per_100g": 8,
+    "fat_g_per_100g": 5
+  },
+  {
+    "id": 19,
+    "name_en": "Quinoa (Cooked)",
+    "name_ar": "كينوا مطبوخة",
+    "calories_per_100g": 120,
+    "protein_g_per_100g": 4.4,
+    "carbs_g_per_100g": 22,
+    "fat_g_per_100g": 1.9
+  },
+  {
+    "id": 20,
+    "name_en": "Lean Beef",
+    "name_ar": "لحم بقري قليل الدهن",
+    "calories_per_100g": 250,
+    "protein_g_per_100g": 26,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 15
+  },
+  {
+    "id": 21,
+    "name_en": "Turkey Breast",
+    "name_ar": "صدر الديك الرومي",
+    "calories_per_100g": 135,
+    "protein_g_per_100g": 25,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 1
+  },
+  {
+    "id": 22,
+    "name_en": "Tuna (Canned in Water)",
+    "name_ar": "تونة معلبة في الماء",
+    "calories_per_100g": 99,
+    "protein_g_per_100g": 22,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 23,
+    "name_en": "Pork Tenderloin",
+    "name_ar": "فيليه الخنزير",
+    "calories_per_100g": 164,
+    "protein_g_per_100g": 30,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 4.8
+  },
+  {
+    "id": 24,
+    "name_en": "Lamb Leg",
+    "name_ar": "فخذ الغنم",
+    "calories_per_100g": 191,
+    "protein_g_per_100g": 28,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 7.7
+  },
+  {
+    "id": 25,
+    "name_en": "Duck Breast",
+    "name_ar": "صدر البط",
+    "calories_per_100g": 137,
+    "protein_g_per_100g": 19.7,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 6.5
+  },
+  {
+    "id": 26,
+    "name_en": "Shrimp",
+    "name_ar": "جمبري",
+    "calories_per_100g": 101,
+    "protein_g_per_100g": 20,
+    "carbs_g_per_100g": 0.9,
+    "fat_g_per_100g": 1.7
+  },
+  {
+    "id": 27,
+    "name_en": "Tilapia",
+    "name_ar": "تيلابيا",
+    "calories_per_100g": 96,
+    "protein_g_per_100g": 20.1,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 1.7
+  },
+  {
+    "id": 28,
+    "name_en": "Sardines",
+    "name_ar": "سردين",
+    "calories_per_100g": 208,
+    "protein_g_per_100g": 25,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 11.5
+  },
+  {
+    "id": 29,
+    "name_en": "Mackerel",
+    "name_ar": "ماكريل",
+    "calories_per_100g": 205,
+    "protein_g_per_100g": 19,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 14
+  },
+  {
+    "id": 30,
+    "name_en": "Chicken Thigh (Skinless)",
+    "name_ar": "فخذ دجاج بدون جلد",
+    "calories_per_100g": 209,
+    "protein_g_per_100g": 26,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 11
+  },
+  {
+    "id": 31,
+    "name_en": "Lentils (Cooked)",
+    "name_ar": "عدس مطبوخ",
+    "calories_per_100g": 116,
+    "protein_g_per_100g": 9,
+    "carbs_g_per_100g": 20,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 32,
+    "name_en": "Black Beans (Cooked)",
+    "name_ar": "فاصولياء سوداء مطبوخة",
+    "calories_per_100g": 114,
+    "protein_g_per_100g": 8,
+    "carbs_g_per_100g": 16,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 33,
+    "name_en": "Chickpeas (Cooked)",
+    "name_ar": "حمص مطبوخ",
+    "calories_per_100g": 134,
+    "protein_g_per_100g": 7,
+    "carbs_g_per_100g": 17,
+    "fat_g_per_100g": 2.1
+  },
+  {
+    "id": 34,
+    "name_en": "Kidney Beans (Cooked)",
+    "name_ar": "فاصولياء حمراء مطبوخة",
+    "calories_per_100g": 112,
+    "protein_g_per_100g": 8,
+    "carbs_g_per_100g": 16,
+    "fat_g_per_100g": 0.8
+  },
+  {
+    "id": 35,
+    "name_en": "Tofu (Firm)",
+    "name_ar": "توفو صلب",
+    "calories_per_100g": 144,
+    "protein_g_per_100g": 15.8,
+    "carbs_g_per_100g": 2.8,
+    "fat_g_per_100g": 8.7
+  },
+  {
+    "id": 36,
+    "name_en": "Tempeh",
+    "name_ar": "تيمبيه",
+    "calories_per_100g": 190,
+    "protein_g_per_100g": 20.3,
+    "carbs_g_per_100g": 7.6,
+    "fat_g_per_100g": 10.8
+  },
+  {
+    "id": 37,
+    "name_en": "Edamame",
+    "name_ar": "إيدامامي",
+    "calories_per_100g": 122,
+    "protein_g_per_100g": 11.9,
+    "carbs_g_per_100g": 8.9,
+    "fat_g_per_100g": 5.2
+  },
+  {
+    "id": 38,
+    "name_en": "Green Peas",
+    "name_ar": "بازلاء خضراء",
+    "calories_per_100g": 81,
+    "protein_g_per_100g": 5.4,
+    "carbs_g_per_100g": 14.5,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 39,
+    "name_en": "Orange",
+    "name_ar": "برتقال",
+    "calories_per_100g": 43,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 8.3,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 40,
+    "name_en": "Strawberries",
+    "name_ar": "فراولة",
+    "calories_per_100g": 32,
+    "protein_g_per_100g": 0.7,
+    "carbs_g_per_100g": 7.7,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 41,
+    "name_en": "Blueberries",
+    "name_ar": "توت أزرق",
+    "calories_per_100g": 57,
+    "protein_g_per_100g": 0.7,
+    "carbs_g_per_100g": 14.5,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 42,
+    "name_en": "Blackberries",
+    "name_ar": "توت أسود",
+    "calories_per_100g": 43,
+    "protein_g_per_100g": 1.4,
+    "carbs_g_per_100g": 9.6,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 43,
+    "name_en": "Raspberries",
+    "name_ar": "توت العليق",
+    "calories_per_100g": 52,
+    "protein_g_per_100g": 1.2,
+    "carbs_g_per_100g": 11.9,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 44,
+    "name_en": "Mango",
+    "name_ar": "مانجو",
+    "calories_per_100g": 65,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 17,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 45,
+    "name_en": "Pineapple",
+    "name_ar": "أناناس",
+    "calories_per_100g": 50,
+    "protein_g_per_100g": 0.5,
+    "carbs_g_per_100g": 13.1,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 46,
+    "name_en": "Grapes",
+    "name_ar": "عنب",
+    "calories_per_100g": 62,
+    "protein_g_per_100g": 0.6,
+    "carbs_g_per_100g": 16.8,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 47,
+    "name_en": "Watermelon",
+    "name_ar": "بطيخ",
+    "calories_per_100g": 30,
+    "protein_g_per_100g": 0.6,
+    "carbs_g_per_100g": 7.6,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 48,
+    "name_en": "Cantaloupe",
+    "name_ar": "شمام",
+    "calories_per_100g": 34,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 8.2,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 49,
+    "name_en": "Papaya",
+    "name_ar": "بابايا",
+    "calories_per_100g": 39,
+    "protein_g_per_100g": 0.5,
+    "carbs_g_per_100g": 9.8,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 50,
+    "name_en": "Kiwi",
+    "name_ar": "كيوي",
+    "calories_per_100g": 61,
+    "protein_g_per_100g": 1.1,
+    "carbs_g_per_100g": 14.7,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 51,
+    "name_en": "Peach",
+    "name_ar": "خوخ",
+    "calories_per_100g": 39,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 9.5,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 52,
+    "name_en": "Pear",
+    "name_ar": "إجاص",
+    "calories_per_100g": 57,
+    "protein_g_per_100g": 0.4,
+    "carbs_g_per_100g": 15.2,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 53,
+    "name_en": "Cherries",
+    "name_ar": "كرز",
+    "calories_per_100g": 50,
+    "protein_g_per_100g": 1,
+    "carbs_g_per_100g": 12.2,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 54,
+    "name_en": "Plums",
+    "name_ar": "برقوق",
+    "calories_per_100g": 46,
+    "protein_g_per_100g": 0.7,
+    "carbs_g_per_100g": 11.4,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 55,
+    "name_en": "Apricots",
+    "name_ar": "مشمش",
+    "calories_per_100g": 48,
+    "protein_g_per_100g": 1.4,
+    "carbs_g_per_100g": 11.1,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 56,
+    "name_en": "Grapefruit",
+    "name_ar": "جريب فروت",
+    "calories_per_100g": 42,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 10.7,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 57,
+    "name_en": "Lemon",
+    "name_ar": "ليمون",
+    "calories_per_100g": 17,
+    "protein_g_per_100g": 0.6,
+    "carbs_g_per_100g": 5.4,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 58,
+    "name_en": "Lime",
+    "name_ar": "ليمون أخضر",
+    "calories_per_100g": 30,
+    "protein_g_per_100g": 0.7,
+    "carbs_g_per_100g": 10.5,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 59,
+    "name_en": "Carrots",
+    "name_ar": "جزر",
+    "calories_per_100g": 41,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 9.6,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 60,
+    "name_en": "Bell Peppers (Red)",
+    "name_ar": "فلفل أحمر حلو",
+    "calories_per_100g": 31,
+    "protein_g_per_100g": 1,
+    "carbs_g_per_100g": 7.3,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 61,
+    "name_en": "Tomatoes",
+    "name_ar": "طماطم",
+    "calories_per_100g": 18,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 3.9,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 62,
+    "name_en": "Cucumber",
+    "name_ar": "خيار",
+    "calories_per_100g": 16,
+    "protein_g_per_100g": 0.7,
+    "carbs_g_per_100g": 3.6,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 63,
+    "name_en": "Lettuce (Romaine)",
+    "name_ar": "خس روماني",
+    "calories_per_100g": 17,
+    "protein_g_per_100g": 1.2,
+    "carbs_g_per_100g": 3.3,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 64,
+    "name_en": "Cabbage",
+    "name_ar": "ملفوف",
+    "calories_per_100g": 25,
+    "protein_g_per_100g": 1.3,
+    "carbs_g_per_100g": 5.8,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 65,
+    "name_en": "Cauliflower",
+    "name_ar": "قرنبيط",
+    "calories_per_100g": 25,
+    "protein_g_per_100g": 1.9,
+    "carbs_g_per_100g": 5,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 66,
+    "name_en": "Brussels Sprouts",
+    "name_ar": "براعم بروكسل",
+    "calories_per_100g": 43,
+    "protein_g_per_100g": 3.4,
+    "carbs_g_per_100g": 8.9,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 67,
+    "name_en": "Asparagus",
+    "name_ar": "هليون",
+    "calories_per_100g": 20,
+    "protein_g_per_100g": 2.2,
+    "carbs_g_per_100g": 3.9,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 68,
+    "name_en": "Zucchini",
+    "name_ar": "كوسة",
+    "calories_per_100g": 17,
+    "protein_g_per_100g": 1.2,
+    "carbs_g_per_100g": 3.1,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 69,
+    "name_en": "Eggplant",
+    "name_ar": "باذنجان",
+    "calories_per_100g": 25,
+    "protein_g_per_100g": 1,
+    "carbs_g_per_100g": 5.9,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 70,
+    "name_en": "Onions",
+    "name_ar": "بصل",
+    "calories_per_100g": 40,
+    "protein_g_per_100g": 1.1,
+    "carbs_g_per_100g": 9.3,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 71,
+    "name_en": "Garlic",
+    "name_ar": "ثوم",
+    "calories_per_100g": 149,
+    "protein_g_per_100g": 6.4,
+    "carbs_g_per_100g": 33.1,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 72,
+    "name_en": "Mushrooms (White)",
+    "name_ar": "فطر أبيض",
+    "calories_per_100g": 22,
+    "protein_g_per_100g": 3.1,
+    "carbs_g_per_100g": 3.3,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 73,
+    "name_en": "Kale",
+    "name_ar": "كيل",
+    "calories_per_100g": 49,
+    "protein_g_per_100g": 4.3,
+    "carbs_g_per_100g": 8.8,
+    "fat_g_per_100g": 0.9
+  },
+  {
+    "id": 74,
+    "name_en": "Arugula",
+    "name_ar": "جرجير",
+    "calories_per_100g": 25,
+    "protein_g_per_100g": 2.6,
+    "carbs_g_per_100g": 3.7,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 75,
+    "name_en": "Celery",
+    "name_ar": "كرفس",
+    "calories_per_100g": 16,
+    "protein_g_per_100g": 0.7,
+    "carbs_g_per_100g": 3,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 76,
+    "name_en": "Radishes",
+    "name_ar": "فجل",
+    "calories_per_100g": 16,
+    "protein_g_per_100g": 0.7,
+    "carbs_g_per_100g": 3.4,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 77,
+    "name_en": "Beets",
+    "name_ar": "شمندر",
+    "calories_per_100g": 43,
+    "protein_g_per_100g": 1.6,
+    "carbs_g_per_100g": 9.6,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 78,
+    "name_en": "Swiss Chard",
+    "name_ar": "سلق",
+    "calories_per_100g": 19,
+    "protein_g_per_100g": 1.8,
+    "carbs_g_per_100g": 3.7,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 79,
+    "name_en": "Quinoa (Raw)",
+    "name_ar": "كينوا خام",
+    "calories_per_100g": 368,
+    "protein_g_per_100g": 14.1,
+    "carbs_g_per_100g": 64.2,
+    "fat_g_per_100g": 6.1
+  },
+  {
+    "id": 80,
+    "name_en": "Wild Rice (Cooked)",
+    "name_ar": "أرز بري مطبوخ",
+    "calories_per_100g": 101,
+    "protein_g_per_100g": 4,
+    "carbs_g_per_100g": 21.3,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 81,
+    "name_en": "Barley (Cooked)",
+    "name_ar": "شعير مطبوخ",
+    "calories_per_100g": 123,
+    "protein_g_per_100g": 2.3,
+    "carbs_g_per_100g": 28.2,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 82,
+    "name_en": "Buckwheat (Cooked)",
+    "name_ar": "حنطة سوداء مطبوخة",
+    "calories_per_100g": 92,
+    "protein_g_per_100g": 3.4,
+    "carbs_g_per_100g": 19.9,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 83,
+    "name_en": "Millet (Cooked)",
+    "name_ar": "دخن مطبوخ",
+    "calories_per_100g": 119,
+    "protein_g_per_100g": 3.5,
+    "carbs_g_per_100g": 23,
+    "fat_g_per_100g": 1
+  },
+  {
+    "id": 84,
+    "name_en": "Bulgur (Cooked)",
+    "name_ar": "برغل مطبوخ",
+    "calories_per_100g": 83,
+    "protein_g_per_100g": 3.1,
+    "carbs_g_per_100g": 18.6,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 85,
+    "name_en": "Amaranth (Cooked)",
+    "name_ar": "قطيفة مطبوخة",
+    "calories_per_100g": 103,
+    "protein_g_per_100g": 4,
+    "carbs_g_per_100g": 18.7,
+    "fat_g_per_100g": 1.6
+  },
+  {
+    "id": 86,
+    "name_en": "Wheat Berries (Cooked)",
+    "name_ar": "حبوب القمح مطبوخة",
+    "calories_per_100g": 151,
+    "protein_g_per_100g": 6.3,
+    "carbs_g_per_100g": 33.1,
+    "fat_g_per_100g": 1.1
+  },
+  {
+    "id": 87,
+    "name_en": "Oats (Raw)",
+    "name_ar": "شوفان خام",
+    "calories_per_100g": 379,
+    "protein_g_per_100g": 13.2,
+    "carbs_g_per_100g": 67.7,
+    "fat_g_per_100g": 6.5
+  },
+  {
+    "id": 88,
+    "name_en": "Cornmeal",
+    "name_ar": "دقيق الذرة",
+    "calories_per_100g": 362,
+    "protein_g_per_100g": 8.1,
+    "carbs_g_per_100g": 79.4,
+    "fat_g_per_100g": 1.9
+  },
+  {
+    "id": 89,
+    "name_en": "Whole Wheat Flour",
+    "name_ar": "دقيق القمح الكامل",
+    "calories_per_100g": 340,
+    "protein_g_per_100g": 13.7,
+    "carbs_g_per_100g": 72,
+    "fat_g_per_100g": 2.5
+  },
+  {
+    "id": 90,
+    "name_en": "Brown Rice (Raw)",
+    "name_ar": "أرز بني خام",
+    "calories_per_100g": 370,
+    "protein_g_per_100g": 7.9,
+    "carbs_g_per_100g": 77.2,
+    "fat_g_per_100g": 2.9
+  },
+  {
+    "id": 91,
+    "name_en": "Walnuts",
+    "name_ar": "جوز",
+    "calories_per_100g": 654,
+    "protein_g_per_100g": 15.2,
+    "carbs_g_per_100g": 13.7,
+    "fat_g_per_100g": 65.2
+  },
+  {
+    "id": 92,
+    "name_en": "Cashews",
+    "name_ar": "كاجو",
+    "calories_per_100g": 553,
+    "protein_g_per_100g": 18.2,
+    "carbs_g_per_100g": 30.2,
+    "fat_g_per_100g": 43.9
+  },
+  {
+    "id": 93,
+    "name_en": "Pistachios",
+    "name_ar": "فستق",
+    "calories_per_100g": 560,
+    "protein_g_per_100g": 20.2,
+    "carbs_g_per_100g": 27.2,
+    "fat_g_per_100g": 45.3
+  },
+  {
+    "id": 94,
+    "name_en": "Brazil Nuts",
+    "name_ar": "جوز البرازيل",
+    "calories_per_100g": 659,
+    "protein_g_per_100g": 14.3,
+    "carbs_g_per_100g": 12.3,
+    "fat_g_per_100g": 67.1
+  },
+  {
+    "id": 95,
+    "name_en": "Hazelnuts",
+    "name_ar": "بندق",
+    "calories_per_100g": 628,
+    "protein_g_per_100g": 15,
+    "carbs_g_per_100g": 16.7,
+    "fat_g_per_100g": 60.8
+  },
+  {
+    "id": 96,
+    "name_en": "Pecans",
+    "name_ar": "جوز البقان",
+    "calories_per_100g": 691,
+    "protein_g_per_100g": 9.2,
+    "carbs_g_per_100g": 13.9,
+    "fat_g_per_100g": 72
+  },
+  {
+    "id": 97,
+    "name_en": "Macadamia Nuts",
+    "name_ar": "جوز المكاداميا",
+    "calories_per_100g": 718,
+    "protein_g_per_100g": 7.9,
+    "carbs_g_per_100g": 13.8,
+    "fat_g_per_100g": 75.8
+  },
+  {
+    "id": 98,
+    "name_en": "Peanuts",
+    "name_ar": "فول سوداني",
+    "calories_per_100g": 567,
+    "protein_g_per_100g": 25.8,
+    "carbs_g_per_100g": 16.1,
+    "fat_g_per_100g": 49.2
+  },
+  {
+    "id": 99,
+    "name_en": "Sunflower Seeds",
+    "name_ar": "بذور دوار الشمس",
+    "calories_per_100g": 584,
+    "protein_g_per_100g": 20.8,
+    "carbs_g_per_100g": 20,
+    "fat_g_per_100g": 51.5
+  },
+  {
+    "id": 100,
+    "name_en": "Pumpkin Seeds",
+    "name_ar": "بذور اليقطين",
+    "calories_per_100g": 559,
+    "protein_g_per_100g": 30.2,
+    "carbs_g_per_100g": 10.7,
+    "fat_g_per_100g": 49.1
+  },
+  {
+    "id": 101,
+    "name_en": "Chia Seeds",
+    "name_ar": "بذور الشيا",
+    "calories_per_100g": 486,
+    "protein_g_per_100g": 16.5,
+    "carbs_g_per_100g": 42.1,
+    "fat_g_per_100g": 30.7
+  },
+  {
+    "id": 102,
+    "name_en": "Flax Seeds",
+    "name_ar": "بذور الكتان",
+    "calories_per_100g": 534,
+    "protein_g_per_100g": 18.3,
+    "carbs_g_per_100g": 28.9,
+    "fat_g_per_100g": 42.2
+  },
+  {
+    "id": 103,
+    "name_en": "Sesame Seeds",
+    "name_ar": "بذور السمسم",
+    "calories_per_100g": 573,
+    "protein_g_per_100g": 17.7,
+    "carbs_g_per_100g": 23.4,
+    "fat_g_per_100g": 49.7
+  },
+  {
+    "id": 104,
+    "name_en": "Pine Nuts",
+    "name_ar": "صنوبر",
+    "calories_per_100g": 673,
+    "protein_g_per_100g": 13.7,
+    "carbs_g_per_100g": 13.1,
+    "fat_g_per_100g": 68.4
+  },
+  {
+    "id": 105,
+    "name_en": "Whole Milk",
+    "name_ar": "حليب كامل الدسم",
+    "calories_per_100g": 61,
+    "protein_g_per_100g": 3.2,
+    "carbs_g_per_100g": 4.8,
+    "fat_g_per_100g": 3.3
+  },
+  {
+    "id": 106,
+    "name_en": "2% Milk",
+    "name_ar": "حليب ٢٪ دسم",
+    "calories_per_100g": 50,
+    "protein_g_per_100g": 3.3,
+    "carbs_g_per_100g": 4.8,
+    "fat_g_per_100g": 2
+  },
+  {
+    "id": 107,
+    "name_en": "Skim Milk",
+    "name_ar": "حليب منزوع الدسم",
+    "calories_per_100g": 34,
+    "protein_g_per_100g": 3.4,
+    "carbs_g_per_100g": 5,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 108,
+    "name_en": "Cheddar Cheese",
+    "name_ar": "جبنة الشيدر",
+    "calories_per_100g": 403,
+    "protein_g_per_100g": 25,
+    "carbs_g_per_100g": 1.3,
+    "fat_g_per_100g": 33.1
+  },
+  {
+    "id": 109,
+    "name_en": "Mozzarella Cheese",
+    "name_ar": "جبنة الموتزاريلا",
+    "calories_per_100g": 300,
+    "protein_g_per_100g": 22.2,
+    "carbs_g_per_100g": 2.2,
+    "fat_g_per_100g": 22.4
+  },
+  {
+    "id": 110,
+    "name_en": "Cottage Cheese",
+    "name_ar": "جبنة قريش",
+    "calories_per_100g": 98,
+    "protein_g_per_100g": 11.1,
+    "carbs_g_per_100g": 3.4,
+    "fat_g_per_100g": 4.3
+  },
+  {
+    "id": 111,
+    "name_en": "Greek Yogurt (Full Fat)",
+    "name_ar": "زبادي يوناني كامل الدسم",
+    "calories_per_100g": 97,
+    "protein_g_per_100g": 9,
+    "carbs_g_per_100g": 4,
+    "fat_g_per_100g": 5
+  },
+  {
+    "id": 112,
+    "name_en": "Regular Yogurt",
+    "name_ar": "زبادي عادي",
+    "calories_per_100g": 61,
+    "protein_g_per_100g": 3.5,
+    "carbs_g_per_100g": 4.7,
+    "fat_g_per_100g": 3.3
+  },
+  {
+    "id": 113,
+    "name_en": "Feta Cheese",
+    "name_ar": "جبنة الفيتا",
+    "calories_per_100g": 264,
+    "protein_g_per_100g": 14.2,
+    "carbs_g_per_100g": 4.1,
+    "fat_g_per_100g": 21.3
+  },
+  {
+    "id": 114,
+    "name_en": "Parmesan Cheese",
+    "name_ar": "جبنة البارميزان",
+    "calories_per_100g": 431,
+    "protein_g_per_100g": 38.5,
+    "carbs_g_per_100g": 4.1,
+    "fat_g_per_100g": 29
+  },
+  {
+    "id": 115,
+    "name_en": "Swiss Cheese",
+    "name_ar": "جبنة سويسرية",
+    "calories_per_100g": 380,
+    "protein_g_per_100g": 26.9,
+    "carbs_g_per_100g": 5.4,
+    "fat_g_per_100g": 27.8
+  },
+  {
+    "id": 116,
+    "name_en": "Cream Cheese",
+    "name_ar": "جبنة كريمية",
+    "calories_per_100g": 342,
+    "protein_g_per_100g": 6.2,
+    "carbs_g_per_100g": 4.1,
+    "fat_g_per_100g": 34.2
+  },
+  {
+    "id": 117,
+    "name_en": "Ricotta Cheese",
+    "name_ar": "جبنة الريكوتا",
+    "calories_per_100g": 174,
+    "protein_g_per_100g": 11.4,
+    "carbs_g_per_100g": 3,
+    "fat_g_per_100g": 13
+  },
+  {
+    "id": 118,
+    "name_en": "Goat Cheese",
+    "name_ar": "جبنة الماعز",
+    "calories_per_100g": 364,
+    "protein_g_per_100g": 25.4,
+    "carbs_g_per_100g": 2.5,
+    "fat_g_per_100g": 29.8
+  },
+  {
+    "id": 119,
+    "name_en": "Coconut Oil",
+    "name_ar": "زيت جوز الهند",
+    "calories_per_100g": 862,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 100
+  },
+  {
+    "id": 120,
+    "name_en": "Canola Oil",
+    "name_ar": "زيت الكانولا",
+    "calories_per_100g": 884,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 100
+  },
+  {
+    "id": 121,
+    "name_en": "Sunflower Oil",
+    "name_ar": "زيت دوار الشمس",
+    "calories_per_100g": 884,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 100
+  },
+  {
+    "id": 122,
+    "name_en": "Avocado Oil",
+    "name_ar": "زيت الأفوكادو",
+    "calories_per_100g": 884,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 100
+  },
+  {
+    "id": 123,
+    "name_en": "Sesame Oil",
+    "name_ar": "زيت السمسم",
+    "calories_per_100g": 884,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 100
+  },
+  {
+    "id": 124,
+    "name_en": "Butter",
+    "name_ar": "زبدة",
+    "calories_per_100g": 717,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 0.1,
+    "fat_g_per_100g": 81.1
+  },
+  {
+    "id": 125,
+    "name_en": "Ghee",
+    "name_ar": "سمن",
+    "calories_per_100g": 876,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 99.5
+  },
+  {
+    "id": 126,
+    "name_en": "Lobster",
+    "name_ar": "كركند",
+    "calories_per_100g": 89,
+    "protein_g_per_100g": 19,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 0.9
+  },
+  {
+    "id": 127,
+    "name_en": "Crab",
+    "name_ar": "سرطان البحر",
+    "calories_per_100g": 87,
+    "protein_g_per_100g": 18.1,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 1.1
+  },
+  {
+    "id": 128,
+    "name_en": "Scallops",
+    "name_ar": "إسكالوب",
+    "calories_per_100g": 88,
+    "protein_g_per_100g": 15.5,
+    "carbs_g_per_100g": 2.4,
+    "fat_g_per_100g": 0.8
+  },
+  {
+    "id": 129,
+    "name_en": "Mussels",
+    "name_ar": "بلح البحر",
+    "calories_per_100g": 86,
+    "protein_g_per_100g": 11.9,
+    "carbs_g_per_100g": 7.4,
+    "fat_g_per_100g": 2.2
+  },
+  {
+    "id": 130,
+    "name_en": "Oysters",
+    "name_ar": "محار",
+    "calories_per_100g": 68,
+    "protein_g_per_100g": 9,
+    "carbs_g_per_100g": 4.5,
+    "fat_g_per_100g": 1.6
+  },
+  {
+    "id": 131,
+    "name_en": "Clams",
+    "name_ar": "محار صدفي",
+    "calories_per_100g": 86,
+    "protein_g_per_100g": 15.5,
+    "carbs_g_per_100g": 2.6,
+    "fat_g_per_100g": 1.9
+  },
+  {
+    "id": 132,
+    "name_en": "Halibut",
+    "name_ar": "سمك الهلبوت",
+    "calories_per_100g": 111,
+    "protein_g_per_100g": 20.8,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 2.3
+  },
+  {
+    "id": 133,
+    "name_en": "Sole",
+    "name_ar": "سمك موسى",
+    "calories_per_100g": 91,
+    "protein_g_per_100g": 18.8,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 1.2
+  },
+  {
+    "id": 134,
+    "name_en": "Trout",
+    "name_ar": "تراوت",
+    "calories_per_100g": 148,
+    "protein_g_per_100g": 20.8,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 6.6
+  },
+  {
+    "id": 135,
+    "name_en": "Sea Bass",
+    "name_ar": "سمك القاروص",
+    "calories_per_100g": 97,
+    "protein_g_per_100g": 18.4,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 2.0
+  },
+  {
+    "id": 136,
+    "name_en": "Potato (Baked)",
+    "name_ar": "بطاطس مخبوزة",
+    "calories_per_100g": 93,
+    "protein_g_per_100g": 2.1,
+    "carbs_g_per_100g": 21.2,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 137,
+    "name_en": "Potato (Boiled)",
+    "name_ar": "بطاطس مسلوقة",
+    "calories_per_100g": 87,
+    "protein_g_per_100g": 1.9,
+    "carbs_g_per_100g": 20.1,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 138,
+    "name_en": "Yam",
+    "name_ar": "يام",
+    "calories_per_100g": 118,
+    "protein_g_per_100g": 1.5,
+    "carbs_g_per_100g": 27.9,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 139,
+    "name_en": "Turnips",
+    "name_ar": "لفت",
+    "calories_per_100g": 28,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 6.4,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 140,
+    "name_en": "Rutabaga",
+    "name_ar": "لفت سويدي",
+    "calories_per_100g": 36,
+    "protein_g_per_100g": 1.2,
+    "carbs_g_per_100g": 8.1,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 141,
+    "name_en": "Parsnips",
+    "name_ar": "جزر أبيض",
+    "calories_per_100g": 75,
+    "protein_g_per_100g": 1.2,
+    "carbs_g_per_100g": 17.9,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 142,
+    "name_en": "Cassava",
+    "name_ar": "كاسافا",
+    "calories_per_100g": 160,
+    "protein_g_per_100g": 1.4,
+    "carbs_g_per_100g": 38.1,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 143,
+    "name_en": "Taro",
+    "name_ar": "قلقاس",
+    "calories_per_100g": 112,
+    "protein_g_per_100g": 1.5,
+    "carbs_g_per_100g": 26.5,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 144,
+    "name_en": "Butternut Squash",
+    "name_ar": "قرع الجوز",
+    "calories_per_100g": 45,
+    "protein_g_per_100g": 1,
+    "carbs_g_per_100g": 11.7,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 145,
+    "name_en": "Acorn Squash",
+    "name_ar": "قرع البلوط",
+    "calories_per_100g": 40,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 10.4,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 146,
+    "name_en": "Spaghetti Squash",
+    "name_ar": "قرع السباغيتي",
+    "calories_per_100g": 31,
+    "protein_g_per_100g": 0.6,
+    "carbs_g_per_100g": 7,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 147,
+    "name_en": "Pumpkin",
+    "name_ar": "قرع عسلي",
+    "calories_per_100g": 26,
+    "protein_g_per_100g": 1,
+    "carbs_g_per_100g": 6.5,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 148,
+    "name_en": "Delicata Squash",
+    "name_ar": "قرع ديليكاتا",
+    "calories_per_100g": 40,
+    "protein_g_per_100g": 1.5,
+    "carbs_g_per_100g": 9,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 149,
+    "name_en": "Parsley",
+    "name_ar": "بقدونس",
+    "calories_per_100g": 36,
+    "protein_g_per_100g": 3,
+    "carbs_g_per_100g": 6.3,
+    "fat_g_per_100g": 0.8
+  },
+  {
+    "id": 150,
+    "name_en": "Cilantro",
+    "name_ar": "كزبرة خضراء",
+    "calories_per_100g": 23,
+    "protein_g_per_100g": 2.1,
+    "carbs_g_per_100g": 3.7,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 151,
+    "name_en": "Basil",
+    "name_ar": "ريحان",
+    "calories_per_100g": 22,
+    "protein_g_per_100g": 3.2,
+    "carbs_g_per_100g": 2.6,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 152,
+    "name_en": "Mint",
+    "name_ar": "نعناع",
+    "calories_per_100g": 70,
+    "protein_g_per_100g": 3.8,
+    "carbs_g_per_100g": 14.9,
+    "fat_g_per_100g": 0.9
+  },
+  {
+    "id": 153,
+    "name_en": "Dill",
+    "name_ar": "شبت",
+    "calories_per_100g": 43,
+    "protein_g_per_100g": 3.5,
+    "carbs_g_per_100g": 7,
+    "fat_g_per_100g": 1.1
+  },
+  {
+    "id": 154,
+    "name_en": "Oregano",
+    "name_ar": "أوريجانو",
+    "calories_per_100g": 25,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 4.1,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 155,
+    "name_en": "Thyme",
+    "name_ar": "زعتر أخضر",
+    "calories_per_100g": 101,
+    "protein_g_per_100g": 5.6,
+    "carbs_g_per_100g": 24.5,
+    "fat_g_per_100g": 1.7
+  },
+  {
+    "id": 156,
+    "name_en": "Rosemary",
+    "name_ar": "إكليل الجبل",
+    "calories_per_100g": 131,
+    "protein_g_per_100g": 3.3,
+    "carbs_g_per_100g": 20.7,
+    "fat_g_per_100g": 5.9
+  },
+  {
+    "id": 157,
+    "name_en": "Sage",
+    "name_ar": "مرمية",
+    "calories_per_100g": 315,
+    "protein_g_per_100g": 10.6,
+    "carbs_g_per_100g": 60.7,
+    "fat_g_per_100g": 12.8
+  },
+  {
+    "id": 158,
+    "name_en": "Chives",
+    "name_ar": "ثوم معمر",
+    "calories_per_100g": 30,
+    "protein_g_per_100g": 3.3,
+    "carbs_g_per_100g": 4.4,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 159,
+    "name_en": "Coconut (Fresh)",
+    "name_ar": "جوز هند طازج",
+    "calories_per_100g": 354,
+    "protein_g_per_100g": 3.3,
+    "carbs_g_per_100g": 15.2,
+    "fat_g_per_100g": 33.5
+  },
+  {
+    "id": 160,
+    "name_en": "Pomegranate",
+    "name_ar": "رمان",
+    "calories_per_100g": 83,
+    "protein_g_per_100g": 1.7,
+    "carbs_g_per_100g": 18.7,
+    "fat_g_per_100g": 1.2
+  },
+  {
+    "id": 161,
+    "name_en": "Dragon Fruit",
+    "name_ar": "فاكهة التنين",
+    "calories_per_100g": 60,
+    "protein_g_per_100g": 1.2,
+    "carbs_g_per_100g": 13,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 162,
+    "name_en": "Star Fruit",
+    "name_ar": "كارامبولا",
+    "calories_per_100g": 31,
+    "protein_g_per_100g": 1,
+    "carbs_g_per_100g": 6.7,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 163,
+    "name_en": "Passion Fruit",
+    "name_ar": "فاكهة الآلام",
+    "calories_per_100g": 97,
+    "protein_g_per_100g": 2.2,
+    "carbs_g_per_100g": 23,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 164,
+    "name_en": "Guava",
+    "name_ar": "جوافة",
+    "calories_per_100g": 68,
+    "protein_g_per_100g": 2.6,
+    "carbs_g_per_100g": 14.3,
+    "fat_g_per_100g": 1
+  },
+  {
+    "id": 165,
+    "name_en": "Lychee",
+    "name_ar": "ليتشي",
+    "calories_per_100g": 66,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 16.5,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 166,
+    "name_en": "Rambutan",
+    "name_ar": "رامبوتان",
+    "calories_per_100g": 82,
+    "protein_g_per_100g": 0.7,
+    "carbs_g_per_100g": 20.9,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 167,
+    "name_en": "Jackfruit",
+    "name_ar": "جاك فروت",
+    "calories_per_100g": 95,
+    "protein_g_per_100g": 1.7,
+    "carbs_g_per_100g": 23.2,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 168,
+    "name_en": "Durian",
+    "name_ar": "دوريان",
+    "calories_per_100g": 147,
+    "protein_g_per_100g": 1.5,
+    "carbs_g_per_100g": 27.1,
+    "fat_g_per_100g": 5.3
+  },
+  {
+    "id": 169,
+    "name_en": "Dates",
+    "name_ar": "تمر",
+    "calories_per_100g": 277,
+    "protein_g_per_100g": 1.8,
+    "carbs_g_per_100g": 75,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 170,
+    "name_en": "Raisins",
+    "name_ar": "زبيب",
+    "calories_per_100g": 299,
+    "protein_g_per_100g": 3.1,
+    "carbs_g_per_100g": 79.2,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 171,
+    "name_en": "Dried Apricots",
+    "name_ar": "مشمش مجفف",
+    "calories_per_100g": 241,
+    "protein_g_per_100g": 3.4,
+    "carbs_g_per_100g": 62.6,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 172,
+    "name_en": "Dried Figs",
+    "name_ar": "تين مجفف",
+    "calories_per_100g": 249,
+    "protein_g_per_100g": 3.3,
+    "carbs_g_per_100g": 63.9,
+    "fat_g_per_100g": 0.9
+  },
+  {
+    "id": 173,
+    "name_en": "Prunes",
+    "name_ar": "خوخ مجفف",
+    "calories_per_100g": 240,
+    "protein_g_per_100g": 2.2,
+    "carbs_g_per_100g": 63.9,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 174,
+    "name_en": "Dried Cranberries",
+    "name_ar": "توت بري مجفف",
+    "calories_per_100g": 308,
+    "protein_g_per_100g": 0.1,
+    "carbs_g_per_100g": 82.8,
+    "fat_g_per_100g": 1.4
+  },
+  {
+    "id": 175,
+    "name_en": "Dried Mango",
+    "name_ar": "مانجو مجففة",
+    "calories_per_100g": 319,
+    "protein_g_per_100g": 2.5,
+    "carbs_g_per_100g": 78.6,
+    "fat_g_per_100g": 1.2
+  },
+  {
+    "id": 176,
+    "name_en": "Lima Beans (Cooked)",
+    "name_ar": "فول ليما مطبوخ",
+    "calories_per_100g": 113,
+    "protein_g_per_100g": 7.8,
+    "carbs_g_per_100g": 20.9,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 177,
+    "name_en": "Navy Beans (Cooked)",
+    "name_ar": "فول أبيض مطبوخ",
+    "calories_per_100g": 140,
+    "protein_g_per_100g": 8.2,
+    "carbs_g_per_100g": 26.1,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 178,
+    "name_en": "Pinto Beans (Cooked)",
+    "name_ar": "فول بينتو مطبوخ",
+    "calories_per_100g": 143,
+    "protein_g_per_100g": 9,
+    "carbs_g_per_100g": 26.2,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 179,
+    "name_en": "Adzuki Beans (Cooked)",
+    "name_ar": "فول أدزوكي مطبوخ",
+    "calories_per_100g": 128,
+    "protein_g_per_100g": 7.5,
+    "carbs_g_per_100g": 25,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 180,
+    "name_en": "Mung Beans (Cooked)",
+    "name_ar": "فول المونج مطبوخ",
+    "calories_per_100g": 105,
+    "protein_g_per_100g": 7,
+    "carbs_g_per_100g": 19.2,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 181,
+    "name_en": "Black-Eyed Peas (Cooked)",
+    "name_ar": "لوبيا سوداء مطبوخة",
+    "calories_per_100g": 116,
+    "protein_g_per_100g": 7.7,
+    "carbs_g_per_100g": 20.3,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 182,
+    "name_en": "Fava Beans (Cooked)",
+    "name_ar": "فول مدمس مطبوخ",
+    "calories_per_100g": 110,
+    "protein_g_per_100g": 7.6,
+    "carbs_g_per_100g": 19.7,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 183,
+    "name_en": "Split Peas (Cooked)",
+    "name_ar": "بازلاء مجففة مطبوخة",
+    "calories_per_100g": 118,
+    "protein_g_per_100g": 8.3,
+    "carbs_g_per_100g": 21.1,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 184,
+    "name_en": "Ground Turkey",
+    "name_ar": "لحم ديك رومي مفروم",
+    "calories_per_100g": 203,
+    "protein_g_per_100g": 27.4,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 9.4
+  },
+  {
+    "id": 185,
+    "name_en": "Venison",
+    "name_ar": "لحم الغزال",
+    "calories_per_100g": 158,
+    "protein_g_per_100g": 30,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 3.2
+  },
+  {
+    "id": 186,
+    "name_en": "Bison",
+    "name_ar": "لحم البيسون",
+    "calories_per_100g": 146,
+    "protein_g_per_100g": 28.4,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 2.4
+  },
+  {
+    "id": 187,
+    "name_en": "Rabbit",
+    "name_ar": "لحم أرنب",
+    "calories_per_100g": 173,
+    "protein_g_per_100g": 33,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 3.5
+  },
+  {
+    "id": 188,
+    "name_en": "Goat",
+    "name_ar": "لحم ماعز",
+    "calories_per_100g": 143,
+    "protein_g_per_100g": 27,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 3.0
+  },
+  {
+    "id": 189,
+    "name_en": "Veal",
+    "name_ar": "لحم عجل",
+    "calories_per_100g": 172,
+    "protein_g_per_100g": 31.9,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 4.0
+  },
+  {
+    "id": 190,
+    "name_en": "Ground Beef (90% Lean)",
+    "name_ar": "لحم بقري مفروم قليل الدهن",
+    "calories_per_100g": 176,
+    "protein_g_per_100g": 25.9,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 7.2
+  },
+  {
+    "id": 191,
+    "name_en": "Beef Sirloin",
+    "name_ar": "لحم بقري سيرلوين",
+    "calories_per_100g": 200,
+    "protein_g_per_100g": 30.4,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 7.8
+  },
+  {
+    "id": 192,
+    "name_en": "Beef Tenderloin",
+    "name_ar": "فيليه البقر",
+    "calories_per_100g": 212,
+    "protein_g_per_100g": 28.3,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 10.1
+  },
+  {
+    "id": 193,
+    "name_en": "Pork Chops",
+    "name_ar": "قطع لحم الخنزير",
+    "calories_per_100g": 231,
+    "protein_g_per_100g": 25.7,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 13.9
+  },
+  {
+    "id": 194,
+    "name_en": "Spelt (Cooked)",
+    "name_ar": "حنطة مطبوخة",
+    "calories_per_100g": 127,
+    "protein_g_per_100g": 5.5,
+    "carbs_g_per_100g": 26.4,
+    "fat_g_per_100g": 0.9
+  },
+  {
+    "id": 195,
+    "name_en": "Kamut (Cooked)",
+    "name_ar": "كاموت مطبوخ",
+    "calories_per_100g": 132,
+    "protein_g_per_100g": 6,
+    "carbs_g_per_100g": 27.6,
+    "fat_g_per_100g": 0.9
+  },
+  {
+    "id": 196,
+    "name_en": "Farro (Cooked)",
+    "name_ar": "فارو مطبوخ",
+    "calories_per_100g": 123,
+    "protein_g_per_100g": 5,
+    "carbs_g_per_100g": 26.5,
+    "fat_g_per_100g": 0.9
+  },
+  {
+    "id": 197,
+    "name_en": "Triticale (Cooked)",
+    "name_ar": "تريتيكالي مطبوخ",
+    "calories_per_100g": 130,
+    "protein_g_per_100g": 4.5,
+    "carbs_g_per_100g": 28.1,
+    "fat_g_per_100g": 0.8
+  },
+  {
+    "id": 198,
+    "name_en": "Teff (Cooked)",
+    "name_ar": "تيف مطبوخ",
+    "calories_per_100g": 101,
+    "protein_g_per_100g": 3.9,
+    "carbs_g_per_100g": 20,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 199,
+    "name_en": "Sorghum (Cooked)",
+    "name_ar": "ذرة رفيعة مطبوخة",
+    "calories_per_100g": 123,
+    "protein_g_per_100g": 3.5,
+    "carbs_g_per_100g": 28.6,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 200,
+    "name_en": "Freekeh (Cooked)",
+    "name_ar": "فريكة مطبوخة",
+    "calories_per_100g": 141,
+    "protein_g_per_100g": 5.4,
+    "carbs_g_per_100g": 30.1,
+    "fat_g_per_100g": 0.9
+  },
+  {
+    "id": 201,
+    "name_en": "Steel Cut Oats (Cooked)",
+    "name_ar": "شوفان مقطع بالفولاذ",
+    "calories_per_100g": 62,
+    "protein_g_per_100g": 2.4,
+    "carbs_g_per_100g": 12,
+    "fat_g_per_100g": 1.4
+  },
+  {
+    "id": 202,
+    "name_en": "Rolled Oats (Cooked)",
+    "name_ar": "شوفان مدلفن مطبوخ",
+    "calories_per_100g": 68,
+    "protein_g_per_100g": 2.4,
+    "carbs_g_per_100g": 12,
+    "fat_g_per_100g": 1.4
+  },
+  {
+    "id": 203,
+    "name_en": "Collard Greens",
+    "name_ar": "خضار ورقية",
+    "calories_per_100g": 32,
+    "protein_g_per_100g": 3,
+    "carbs_g_per_100g": 5.7,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 204,
+    "name_en": "Bok Choy",
+    "name_ar": "بوك تشوي",
+    "calories_per_100g": 13,
+    "protein_g_per_100g": 1.5,
+    "carbs_g_per_100g": 2.2,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 205,
+    "name_en": "Watercress",
+    "name_ar": "جرجير الماء",
+    "calories_per_100g": 11,
+    "protein_g_per_100g": 2.3,
+    "carbs_g_per_100g": 1.3,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 206,
+    "name_en": "Endive",
+    "name_ar": "هندباء",
+    "calories_per_100g": 17,
+    "protein_g_per_100g": 1.3,
+    "carbs_g_per_100g": 3.4,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 207,
+    "name_en": "Fennel",
+    "name_ar": "شمر",
+    "calories_per_100g": 31,
+    "protein_g_per_100g": 1.2,
+    "carbs_g_per_100g": 7.3,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 208,
+    "name_en": "Leeks",
+    "name_ar": "كراث",
+    "calories_per_100g": 61,
+    "protein_g_per_100g": 1.5,
+    "carbs_g_per_100g": 14.2,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 209,
+    "name_en": "Okra",
+    "name_ar": "بامية",
+    "calories_per_100g": 33,
+    "protein_g_per_100g": 1.9,
+    "carbs_g_per_100g": 7.5,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 210,
+    "name_en": "Artichoke Hearts",
+    "name_ar": "قلب الأرضي شوكي",
+    "calories_per_100g": 47,
+    "protein_g_per_100g": 3.3,
+    "carbs_g_per_100g": 10.5,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 211,
+    "name_en": "Kohlrabi",
+    "name_ar": "كولرابي",
+    "calories_per_100g": 27,
+    "protein_g_per_100g": 1.7,
+    "carbs_g_per_100g": 6.2,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 212,
+    "name_en": "Jicama",
+    "name_ar": "هيكاما",
+    "calories_per_100g": 38,
+    "protein_g_per_100g": 0.7,
+    "carbs_g_per_100g": 8.8,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 213,
+    "name_en": "Anchovies",
+    "name_ar": "أنشوفة",
+    "calories_per_100g": 131,
+    "protein_g_per_100g": 20.4,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 4.8
+  },
+  {
+    "id": 214,
+    "name_en": "Herring",
+    "name_ar": "رنجة",
+    "calories_per_100g": 158,
+    "protein_g_per_100g": 18,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 9
+  },
+  {
+    "id": 215,
+    "name_en": "Pollock",
+    "name_ar": "بولوك",
+    "calories_per_100g": 92,
+    "protein_g_per_100g": 20.4,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 0.9
+  },
+  {
+    "id": 216,
+    "name_en": "Haddock",
+    "name_ar": "هادوك",
+    "calories_per_100g": 90,
+    "protein_g_per_100g": 20.6,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 217,
+    "name_en": "Flounder",
+    "name_ar": "سمك مفلطح",
+    "calories_per_100g": 86,
+    "protein_g_per_100g": 17.9,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 1.2
+  },
+  {
+    "id": 218,
+    "name_en": "Monkfish",
+    "name_ar": "سمك الراهب",
+    "calories_per_100g": 76,
+    "protein_g_per_100g": 14.5,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 1.5
+  },
+  {
+    "id": 219,
+    "name_en": "Snapper",
+    "name_ar": "سمك النهاش",
+    "calories_per_100g": 100,
+    "protein_g_per_100g": 20.5,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 1.3
+  },
+  {
+    "id": 220,
+    "name_en": "Mahi Mahi",
+    "name_ar": "ماهي ماهي",
+    "calories_per_100g": 85,
+    "protein_g_per_100g": 18.5,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 221,
+    "name_en": "Grouper",
+    "name_ar": "هامور",
+    "calories_per_100g": 92,
+    "protein_g_per_100g": 19.4,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 1
+  },
+  {
+    "id": 222,
+    "name_en": "Swordfish",
+    "name_ar": "سمك السيف",
+    "calories_per_100g": 144,
+    "protein_g_per_100g": 19.8,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 6.7
+  },
+  {
+    "id": 223,
+    "name_en": "Yellowfin Tuna",
+    "name_ar": "تونة صفراء الزعنفة",
+    "calories_per_100g": 108,
+    "protein_g_per_100g": 24.4,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 224,
+    "name_en": "Bluefin Tuna",
+    "name_ar": "تونة زرقاء الزعنفة",
+    "calories_per_100g": 144,
+    "protein_g_per_100g": 23.3,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 4.9
+  },
+  {
+    "id": 225,
+    "name_en": "Chicken Wings",
+    "name_ar": "أجنحة الدجاج",
+    "calories_per_100g": 203,
+    "protein_g_per_100g": 30.5,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 8.1
+  },
+  {
+    "id": 226,
+    "name_en": "Chicken Drumsticks",
+    "name_ar": "أعواد الدجاج",
+    "calories_per_100g": 172,
+    "protein_g_per_100g": 28.3,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 5.7
+  },
+  {
+    "id": 227,
+    "name_en": "Turkey Leg",
+    "name_ar": "فخذ الديك الرومي",
+    "calories_per_100g": 208,
+    "protein_g_per_100g": 28.1,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 9.6
+  },
+  {
+    "id": 228,
+    "name_en": "Goose",
+    "name_ar": "إوز",
+    "calories_per_100g": 238,
+    "protein_g_per_100g": 25.2,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 14.4
+  },
+  {
+    "id": 229,
+    "name_en": "Pheasant",
+    "name_ar": "تدرج",
+    "calories_per_100g": 181,
+    "protein_g_per_100g": 32.4,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 5.2
+  },
+  {
+    "id": 230,
+    "name_en": "Cornish Hen",
+    "name_ar": "دجاج كورنيش",
+    "calories_per_100g": 186,
+    "protein_g_per_100g": 23.9,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 9.4
+  },
+  {
+    "id": 231,
+    "name_en": "Quail",
+    "name_ar": "سمان",
+    "calories_per_100g": 227,
+    "protein_g_per_100g": 25,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 13.1
+  },
+  {
+    "id": 232,
+    "name_en": "Seitan",
+    "name_ar": "سيتان",
+    "calories_per_100g": 370,
+    "protein_g_per_100g": 75,
+    "carbs_g_per_100g": 14,
+    "fat_g_per_100g": 1.9
+  },
+  {
+    "id": 233,
+    "name_en": "Textured Vegetable Protein",
+    "name_ar": "بروتين نباتي محكم",
+    "calories_per_100g": 345,
+    "protein_g_per_100g": 52,
+    "carbs_g_per_100g": 33,
+    "fat_g_per_100g": 1.2
+  },
+  {
+    "id": 234,
+    "name_en": "Spirulina",
+    "name_ar": "سبيرولينا",
+    "calories_per_100g": 290,
+    "protein_g_per_100g": 57,
+    "carbs_g_per_100g": 23,
+    "fat_g_per_100g": 7.7
+  },
+  {
+    "id": 235,
+    "name_en": "Nutritional Yeast",
+    "name_ar": "خميرة غذائية",
+    "calories_per_100g": 325,
+    "protein_g_per_100g": 45,
+    "carbs_g_per_100g": 38,
+    "fat_g_per_100g": 5
+  },
+  {
+    "id": 236,
+    "name_en": "Hemp Hearts",
+    "name_ar": "قلوب القنب",
+    "calories_per_100g": 553,
+    "protein_g_per_100g": 31,
+    "carbs_g_per_100g": 4.7,
+    "fat_g_per_100g": 48.8
+  },
+  {
+    "id": 237,
+    "name_en": "Protein Powder (Plant)",
+    "name_ar": "مسحوق بروتين نباتي",
+    "calories_per_100g": 400,
+    "protein_g_per_100g": 80,
+    "carbs_g_per_100g": 10,
+    "fat_g_per_100g": 6
+  },
+  {
+    "id": 238,
+    "name_en": "Cranberries",
+    "name_ar": "توت بري",
+    "calories_per_100g": 46,
+    "protein_g_per_100g": 0.4,
+    "carbs_g_per_100g": 12.2,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 239,
+    "name_en": "Goji Berries",
+    "name_ar": "توت غوجي",
+    "calories_per_100g": 349,
+    "protein_g_per_100g": 14.3,
+    "carbs_g_per_100g": 77.1,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 240,
+    "name_en": "Elderberries",
+    "name_ar": "توت البلسان",
+    "calories_per_100g": 73,
+    "protein_g_per_100g": 0.7,
+    "carbs_g_per_100g": 18.4,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 241,
+    "name_en": "Mulberries",
+    "name_ar": "توت أسود شجري",
+    "calories_per_100g": 43,
+    "protein_g_per_100g": 1.4,
+    "carbs_g_per_100g": 9.8,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 242,
+    "name_en": "Acai Berries",
+    "name_ar": "توت الأكاي",
+    "calories_per_100g": 70,
+    "protein_g_per_100g": 1,
+    "carbs_g_per_100g": 4,
+    "fat_g_per_100g": 5
+  },
+  {
+    "id": 243,
+    "name_en": "Boysenberries",
+    "name_ar": "توت بويزن",
+    "calories_per_100g": 50,
+    "protein_g_per_100g": 1.1,
+    "carbs_g_per_100g": 11.5,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 244,
+    "name_en": "Apple Cider Vinegar",
+    "name_ar": "خل التفاح",
+    "calories_per_100g": 22,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 0.9,
+    "fat_g_per_100g": 0
+  },
+  {
+    "id": 245,
+    "name_en": "Balsamic Vinegar",
+    "name_ar": "خل بلسمي",
+    "calories_per_100g": 88,
+    "protein_g_per_100g": 0.5,
+    "carbs_g_per_100g": 17,
+    "fat_g_per_100g": 0
+  },
+  {
+    "id": 246,
+    "name_en": "Soy Sauce",
+    "name_ar": "صلصة الصويا",
+    "calories_per_100g": 60,
+    "protein_g_per_100g": 10.5,
+    "carbs_g_per_100g": 5.6,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 247,
+    "name_en": "Hot Sauce",
+    "name_ar": "صلصة حارة",
+    "calories_per_100g": 12,
+    "protein_g_per_100g": 1.3,
+    "carbs_g_per_100g": 0.8,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 248,
+    "name_en": "Mustard",
+    "name_ar": "خردل",
+    "calories_per_100g": 66,
+    "protein_g_per_100g": 4.4,
+    "carbs_g_per_100g": 5.8,
+    "fat_g_per_100g": 3.3
+  },
+  {
+    "id": 249,
+    "name_en": "Tahini",
+    "name_ar": "طحينة",
+    "calories_per_100g": 595,
+    "protein_g_per_100g": 18.1,
+    "carbs_g_per_100g": 21,
+    "fat_g_per_100g": 53.8
+  },
+  {
+    "id": 250,
+    "name_en": "Hummus",
+    "name_ar": "حمص",
+    "calories_per_100g": 166,
+    "protein_g_per_100g": 8,
+    "carbs_g_per_100g": 14.3,
+    "fat_g_per_100g": 9.6
+  },
+  {
+    "id": 251,
+    "name_en": "Whole Wheat Pasta (Cooked)",
+    "name_ar": "معكرونة قمح كامل مطبوخة",
+    "calories_per_100g": 124,
+    "protein_g_per_100g": 5,
+    "carbs_g_per_100g": 25,
+    "fat_g_per_100g": 1.1
+  },
+  {
+    "id": 252,
+    "name_en": "White Pasta (Cooked)",
+    "name_ar": "معكرونة بيضاء مطبوخة",
+    "calories_per_100g": 131,
+    "protein_g_per_100g": 5,
+    "carbs_g_per_100g": 25,
+    "fat_g_per_100g": 1.1
+  },
+  {
+    "id": 253,
+    "name_en": "Rice Noodles (Cooked)",
+    "name_ar": "نودلز الأرز مطبوخة",
+    "calories_per_100g": 108,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 25,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 254,
+    "name_en": "Soba Noodles (Cooked)",
+    "name_ar": "نودلز سوبا مطبوخة",
+    "calories_per_100g": 99,
+    "protein_g_per_100g": 5.1,
+    "carbs_g_per_100g": 21,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 255,
+    "name_en": "Udon Noodles (Cooked)",
+    "name_ar": "نودلز أودون مطبوخة",
+    "calories_per_100g": 95,
+    "protein_g_per_100g": 2.8,
+    "carbs_g_per_100g": 19,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 256,
+    "name_en": "Glass Noodles (Cooked)",
+    "name_ar": "نودلز شفافة مطبوخة",
+    "calories_per_100g": 84,
+    "protein_g_per_100g": 0.1,
+    "carbs_g_per_100g": 20.9,
+    "fat_g_per_100g": 0
+  },
+  {
+    "id": 257,
+    "name_en": "Shirataki Noodles",
+    "name_ar": "نودلز شيراتاكي",
+    "calories_per_100g": 10,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 3,
+    "fat_g_per_100g": 0
+  },
+  {
+    "id": 258,
+    "name_en": "Whole Wheat Bread",
+    "name_ar": "خبز القمح الكامل",
+    "calories_per_100g": 247,
+    "protein_g_per_100g": 13,
+    "carbs_g_per_100g": 41,
+    "fat_g_per_100g": 4.2
+  },
+  {
+    "id": 259,
+    "name_en": "White Bread",
+    "name_ar": "خبز أبيض",
+    "calories_per_100g": 265,
+    "protein_g_per_100g": 9,
+    "carbs_g_per_100g": 49,
+    "fat_g_per_100g": 3.2
+  },
+  {
+    "id": 260,
+    "name_en": "Rye Bread",
+    "name_ar": "خبز الجاودار",
+    "calories_per_100g": 259,
+    "protein_g_per_100g": 8.5,
+    "carbs_g_per_100g": 48,
+    "fat_g_per_100g": 3.3
+  },
+  {
+    "id": 261,
+    "name_en": "Sourdough Bread",
+    "name_ar": "خبز العجين المخمر",
+    "calories_per_100g": 289,
+    "protein_g_per_100g": 11.5,
+    "carbs_g_per_100g": 56,
+    "fat_g_per_100g": 2.7
+  },
+  {
+    "id": 262,
+    "name_en": "Pita Bread",
+    "name_ar": "خبز البيتا",
+    "calories_per_100g": 275,
+    "protein_g_per_100g": 9,
+    "carbs_g_per_100g": 55.7,
+    "fat_g_per_100g": 1.2
+  },
+  {
+    "id": 263,
+    "name_en": "Bagel",
+    "name_ar": "بيجل",
+    "calories_per_100g": 257,
+    "protein_g_per_100g": 10.1,
+    "carbs_g_per_100g": 50.9,
+    "fat_g_per_100g": 1.7
+  },
+  {
+    "id": 264,
+    "name_en": "English Muffin",
+    "name_ar": "مافن إنجليزي",
+    "calories_per_100g": 235,
+    "protein_g_per_100g": 8.1,
+    "carbs_g_per_100g": 46,
+    "fat_g_per_100g": 2.2
+  },
+  {
+    "id": 265,
+    "name_en": "Tortilla (Corn)",
+    "name_ar": "تورتيلا ذرة",
+    "calories_per_100g": 218,
+    "protein_g_per_100g": 5.7,
+    "carbs_g_per_100g": 44.6,
+    "fat_g_per_100g": 2.9
+  },
+  {
+    "id": 266,
+    "name_en": "Tortilla (Flour)",
+    "name_ar": "تورتيلا دقيق",
+    "calories_per_100g": 304,
+    "protein_g_per_100g": 8.2,
+    "carbs_g_per_100g": 50.4,
+    "fat_g_per_100g": 7.7
+  },
+  {
+    "id": 267,
+    "name_en": "Naan Bread",
+    "name_ar": "خبز النان",
+    "calories_per_100g": 310,
+    "protein_g_per_100g": 8.7,
+    "carbs_g_per_100g": 51,
+    "fat_g_per_100g": 8.9
+  },
+  {
+    "id": 268,
+    "name_en": "Corn Flakes",
+    "name_ar": "رقائق الذرة",
+    "calories_per_100g": 357,
+    "protein_g_per_100g": 7.5,
+    "carbs_g_per_100g": 84,
+    "fat_g_per_100g": 0.9
+  },
+  {
+    "id": 269,
+    "name_en": "Bran Flakes",
+    "name_ar": "رقائق النخالة",
+    "calories_per_100g": 367,
+    "protein_g_per_100g": 10.6,
+    "carbs_g_per_100g": 80,
+    "fat_g_per_100g": 2.1
+  },
+  {
+    "id": 270,
+    "name_en": "Wheat Biscuits",
+    "name_ar": "بسكويت القمح",
+    "calories_per_100g": 362,
+    "protein_g_per_100g": 11.9,
+    "carbs_g_per_100g": 68.5,
+    "fat_g_per_100g": 2.2
+  },
+  {
+    "id": 271,
+    "name_en": "Granola",
+    "name_ar": "جرانولا",
+    "calories_per_100g": 471,
+    "protein_g_per_100g": 10.1,
+    "carbs_g_per_100g": 64.8,
+    "fat_g_per_100g": 18.3
+  },
+  {
+    "id": 272,
+    "name_en": "Muesli",
+    "name_ar": "موسلي",
+    "calories_per_100g": 362,
+    "protein_g_per_100g": 9.7,
+    "carbs_g_per_100g": 66.9,
+    "fat_g_per_100g": 6.9
+  },
+  {
+    "id": 273,
+    "name_en": "Rice Krispies",
+    "name_ar": "رايس كريسبيز",
+    "calories_per_100g": 387,
+    "protein_g_per_100g": 6.7,
+    "carbs_g_per_100g": 87.3,
+    "fat_g_per_100g": 1.3
+  },
+  {
+    "id": 274,
+    "name_en": "Cheerios",
+    "name_ar": "شيريوس",
+    "calories_per_100g": 379,
+    "protein_g_per_100g": 13.3,
+    "carbs_g_per_100g": 74.7,
+    "fat_g_per_100g": 3.3
+  },
+  {
+    "id": 275,
+    "name_en": "Peanut Butter",
+    "name_ar": "زبدة الفول السوداني",
+    "calories_per_100g": 588,
+    "protein_g_per_100g": 25.1,
+    "carbs_g_per_100g": 20,
+    "fat_g_per_100g": 50.4
+  },
+  {
+    "id": 276,
+    "name_en": "Almond Butter",
+    "name_ar": "زبدة اللوز",
+    "calories_per_100g": 614,
+    "protein_g_per_100g": 21.2,
+    "carbs_g_per_100g": 19.2,
+    "fat_g_per_100g": 55.5
+  },
+  {
+    "id": 277,
+    "name_en": "Cashew Butter",
+    "name_ar": "زبدة الكاجو",
+    "calories_per_100g": 587,
+    "protein_g_per_100g": 17.6,
+    "carbs_g_per_100g": 27.6,
+    "fat_g_per_100g": 46.3
+  },
+  {
+    "id": 278,
+    "name_en": "Sunflower Seed Butter",
+    "name_ar": "زبدة بذور دوار الشمس",
+    "calories_per_100g": 617,
+    "protein_g_per_100g": 17.6,
+    "carbs_g_per_100g": 16.4,
+    "fat_g_per_100g": 56
+  },
+  {
+    "id": 279,
+    "name_en": "Hazelnut Spread",
+    "name_ar": "كريمة البندق",
+    "calories_per_100g": 549,
+    "protein_g_per_100g": 6.4,
+    "carbs_g_per_100g": 57.5,
+    "fat_g_per_100g": 31.6
+  },
+  {
+    "id": 280,
+    "name_en": "Sauerkraut",
+    "name_ar": "ملفوف مخلل",
+    "calories_per_100g": 19,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 4.3,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 281,
+    "name_en": "Kimchi",
+    "name_ar": "كيمتشي",
+    "calories_per_100g": 15,
+    "protein_g_per_100g": 1.1,
+    "carbs_g_per_100g": 2.4,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 282,
+    "name_en": "Pickles (Cucumber)",
+    "name_ar": "مخلل خيار",
+    "calories_per_100g": 11,
+    "protein_g_per_100g": 0.3,
+    "carbs_g_per_100g": 2.3,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 283,
+    "name_en": "Miso",
+    "name_ar": "ميسو",
+    "calories_per_100g": 199,
+    "protein_g_per_100g": 12.8,
+    "carbs_g_per_100g": 26.5,
+    "fat_g_per_100g": 6
+  },
+  {
+    "id": 284,
+    "name_en": "Kefir",
+    "name_ar": "كفير",
+    "calories_per_100g": 41,
+    "protein_g_per_100g": 3.8,
+    "carbs_g_per_100g": 4.5,
+    "fat_g_per_100g": 1
+  },
+  {
+    "id": 285,
+    "name_en": "Kombucha",
+    "name_ar": "كومبوتشا",
+    "calories_per_100g": 19,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 4.6,
+    "fat_g_per_100g": 0
+  },
+  {
+    "id": 286,
+    "name_en": "Shiitake Mushrooms",
+    "name_ar": "فطر شيتاكي",
+    "calories_per_100g": 34,
+    "protein_g_per_100g": 2.2,
+    "carbs_g_per_100g": 6.8,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 287,
+    "name_en": "Portobello Mushrooms",
+    "name_ar": "فطر بورتوبيلو",
+    "calories_per_100g": 22,
+    "protein_g_per_100g": 2.1,
+    "carbs_g_per_100g": 3.9,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 288,
+    "name_en": "Oyster Mushrooms",
+    "name_ar": "فطر محار",
+    "calories_per_100g": 33,
+    "protein_g_per_100g": 3.3,
+    "carbs_g_per_100g": 6.1,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 289,
+    "name_en": "Crimini Mushrooms",
+    "name_ar": "فطر كريميني",
+    "calories_per_100g": 22,
+    "protein_g_per_100g": 3,
+    "carbs_g_per_100g": 3.3,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 290,
+    "name_en": "Chanterelle Mushrooms",
+    "name_ar": "فطر شانتريل",
+    "calories_per_100g": 38,
+    "protein_g_per_100g": 1.5,
+    "carbs_g_per_100g": 7.6,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 291,
+    "name_en": "Porcini Mushrooms",
+    "name_ar": "فطر بورتشيني",
+    "calories_per_100g": 26,
+    "protein_g_per_100g": 3,
+    "carbs_g_per_100g": 4.4,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 292,
+    "name_en": "Enoki Mushrooms",
+    "name_ar": "فطر إينوكي",
+    "calories_per_100g": 37,
+    "protein_g_per_100g": 2.7,
+    "carbs_g_per_100g": 7.8,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 293,
+    "name_en": "Canned Salmon",
+    "name_ar": "سلمون معلب",
+    "calories_per_100g": 142,
+    "protein_g_per_100g": 19.8,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 6.3
+  },
+  {
+    "id": 294,
+    "name_en": "Canned Sardines",
+    "name_ar": "سردين معلب",
+    "calories_per_100g": 208,
+    "protein_g_per_100g": 25,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 11.5
+  },
+  {
+    "id": 295,
+    "name_en": "Canned Tomatoes",
+    "name_ar": "طماطم معلبة",
+    "calories_per_100g": 16,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 3.5,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 296,
+    "name_en": "Tomato Paste",
+    "name_ar": "معجون الطماطم",
+    "calories_per_100g": 82,
+    "protein_g_per_100g": 4.3,
+    "carbs_g_per_100g": 18.9,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 297,
+    "name_en": "Tomato Sauce",
+    "name_ar": "صلصة الطماطم",
+    "calories_per_100g": 29,
+    "protein_g_per_100g": 1.6,
+    "carbs_g_per_100g": 7,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 298,
+    "name_en": "Coconut Milk",
+    "name_ar": "حليب جوز الهند",
+    "calories_per_100g": 230,
+    "protein_g_per_100g": 2.3,
+    "carbs_g_per_100g": 5.5,
+    "fat_g_per_100g": 23.8
+  },
+  {
+    "id": 299,
+    "name_en": "Almond Milk",
+    "name_ar": "حليب اللوز",
+    "calories_per_100g": 17,
+    "protein_g_per_100g": 0.6,
+    "carbs_g_per_100g": 1.5,
+    "fat_g_per_100g": 1.1
+  },
+  {
+    "id": 300,
+    "name_en": "Soy Milk",
+    "name_ar": "حليب الصويا",
+    "calories_per_100g": 54,
+    "protein_g_per_100g": 3.3,
+    "carbs_g_per_100g": 6,
+    "fat_g_per_100g": 1.8
+  },
+  {
+    "id": 301,
+    "name_en": "Oat Milk",
+    "name_ar": "حليب الشوفان",
+    "calories_per_100g": 47,
+    "protein_g_per_100g": 1,
+    "carbs_g_per_100g": 7.5,
+    "fat_g_per_100g": 1.5
+  },
+  {
+    "id": 302,
+    "name_en": "Rice Milk",
+    "name_ar": "حليب الأرز",
+    "calories_per_100g": 47,
+    "protein_g_per_100g": 0.3,
+    "carbs_g_per_100g": 9.2,
+    "fat_g_per_100g": 1
+  },
+  {
+    "id": 303,
+    "name_en": "Rice Cakes",
+    "name_ar": "كعك الأرز",
+    "calories_per_100g": 387,
+    "protein_g_per_100g": 8.2,
+    "carbs_g_per_100g": 81.5,
+    "fat_g_per_100g": 2.8
+  },
+  {
+    "id": 304,
+    "name_en": "Corn Tortilla Chips",
+    "name_ar": "رقائق تورتيلا الذرة",
+    "calories_per_100g": 489,
+    "protein_g_per_100g": 7.5,
+    "carbs_g_per_100g": 63.3,
+    "fat_g_per_100g": 23.8
+  },
+  {
+    "id": 305,
+    "name_en": "Pretzels",
+    "name_ar": "بريتزل",
+    "calories_per_100g": 380,
+    "protein_g_per_100g": 11,
+    "carbs_g_per_100g": 79.7,
+    "fat_g_per_100g": 2.8
+  },
+  {
+    "id": 306,
+    "name_en": "Popcorn (Air-popped)",
+    "name_ar": "فشار هوائي",
+    "calories_per_100g": 387,
+    "protein_g_per_100g": 12.9,
+    "carbs_g_per_100g": 77.8,
+    "fat_g_per_100g": 4.5
+  },
+  {
+    "id": 307,
+    "name_en": "Roasted Chickpeas",
+    "name_ar": "حمص محمص",
+    "calories_per_100g": 164,
+    "protein_g_per_100g": 6,
+    "carbs_g_per_100g": 27.4,
+    "fat_g_per_100g": 2.6
+  },
+  {
+    "id": 308,
+    "name_en": "Seaweed Snacks",
+    "name_ar": "وجبات الأعشاب البحرية",
+    "calories_per_100g": 35,
+    "protein_g_per_100g": 5.8,
+    "carbs_g_per_100g": 5.1,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 309,
+    "name_en": "Elk",
+    "name_ar": "لحم الأيل",
+    "calories_per_100g": 111,
+    "protein_g_per_100g": 22.8,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 1.5
+  },
+  {
+    "id": 310,
+    "name_en": "Moose",
+    "name_ar": "لحم الموظ",
+    "calories_per_100g": 102,
+    "protein_g_per_100g": 22.2,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 311,
+    "name_en": "Wild Boar",
+    "name_ar": "خنزير بري",
+    "calories_per_100g": 122,
+    "protein_g_per_100g": 21.5,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 3.3
+  },
+  {
+    "id": 312,
+    "name_en": "Ostrich",
+    "name_ar": "نعام",
+    "calories_per_100g": 165,
+    "protein_g_per_100g": 29.9,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 4.1
+  },
+  {
+    "id": 313,
+    "name_en": "Kangaroo",
+    "name_ar": "كنغر",
+    "calories_per_100g": 98,
+    "protein_g_per_100g": 22,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 1.1
+  },
+  {
+    "id": 314,
+    "name_en": "Frozen Broccoli",
+    "name_ar": "بروكلي مجمد",
+    "calories_per_100g": 24,
+    "protein_g_per_100g": 2.8,
+    "carbs_g_per_100g": 4.5,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 315,
+    "name_en": "Frozen Green Beans",
+    "name_ar": "فاصولياء خضراء مجمدة",
+    "calories_per_100g": 24,
+    "protein_g_per_100g": 1.8,
+    "carbs_g_per_100g": 5.7,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 316,
+    "name_en": "Frozen Spinach",
+    "name_ar": "سبانخ مجمد",
+    "calories_per_100g": 28,
+    "protein_g_per_100g": 3.4,
+    "carbs_g_per_100g": 4.6,
+    "fat_g_per_100g": 0.8
+  },
+  {
+    "id": 317,
+    "name_en": "Frozen Peas",
+    "name_ar": "بازلاء مجمدة",
+    "calories_per_100g": 77,
+    "protein_g_per_100g": 5.5,
+    "carbs_g_per_100g": 13.3,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 318,
+    "name_en": "Frozen Corn",
+    "name_ar": "ذرة مجمدة",
+    "calories_per_100g": 87,
+    "protein_g_per_100g": 3.2,
+    "carbs_g_per_100g": 20.6,
+    "fat_g_per_100g": 1.2
+  },
+  {
+    "id": 319,
+    "name_en": "Frozen Carrots",
+    "name_ar": "جزر مجمد",
+    "calories_per_100g": 31,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 7.2,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 320,
+    "name_en": "Frozen Cauliflower",
+    "name_ar": "قرنبيط مجمد",
+    "calories_per_100g": 23,
+    "protein_g_per_100g": 1.8,
+    "carbs_g_per_100g": 4.9,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 321,
+    "name_en": "Tangerine",
+    "name_ar": "يوسفي",
+    "calories_per_100g": 53,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 13.3,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 322,
+    "name_en": "Clementine",
+    "name_ar": "كليمنتين",
+    "calories_per_100g": 47,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 12,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 323,
+    "name_en": "Blood Orange",
+    "name_ar": "برتقال دموي",
+    "calories_per_100g": 50,
+    "protein_g_per_100g": 1,
+    "carbs_g_per_100g": 12.5,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 324,
+    "name_en": "Mandarin",
+    "name_ar": "مندرين",
+    "calories_per_100g": 53,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 13.3,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 325,
+    "name_en": "Key Lime",
+    "name_ar": "ليمون مفاتيح",
+    "calories_per_100g": 25,
+    "protein_g_per_100g": 0.5,
+    "carbs_g_per_100g": 8.4,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 326,
+    "name_en": "Meyer Lemon",
+    "name_ar": "ليمون ماير",
+    "calories_per_100g": 20,
+    "protein_g_per_100g": 0.6,
+    "carbs_g_per_100g": 6.5,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 327,
+    "name_en": "Bergamot",
+    "name_ar": "برغموت",
+    "calories_per_100g": 36,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 8.9,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 328,
+    "name_en": "Honeydew",
+    "name_ar": "شمام عسلي",
+    "calories_per_100g": 36,
+    "protein_g_per_100g": 0.5,
+    "carbs_g_per_100g": 9.1,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 329,
+    "name_en": "Casaba Melon",
+    "name_ar": "شمام كاسابا",
+    "calories_per_100g": 28,
+    "protein_g_per_100g": 1.1,
+    "carbs_g_per_100g": 6.2,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 330,
+    "name_en": "Crenshaw Melon",
+    "name_ar": "شمام كرينشو",
+    "calories_per_100g": 32,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 7.9,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 331,
+    "name_en": "Galia Melon",
+    "name_ar": "شمام جاليا",
+    "calories_per_100g": 25,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 6.2,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 332,
+    "name_en": "Beef Liver",
+    "name_ar": "كبد البقر",
+    "calories_per_100g": 135,
+    "protein_g_per_100g": 20.4,
+    "carbs_g_per_100g": 3.9,
+    "fat_g_per_100g": 3.6
+  },
+  {
+    "id": 333,
+    "name_en": "Chicken Liver",
+    "name_ar": "كبد الدجاج",
+    "calories_per_100g": 119,
+    "protein_g_per_100g": 16.9,
+    "carbs_g_per_100g": 0.7,
+    "fat_g_per_100g": 4.8
+  },
+  {
+    "id": 334,
+    "name_en": "Beef Heart",
+    "name_ar": "قلب البقر",
+    "calories_per_100g": 112,
+    "protein_g_per_100g": 17.7,
+    "carbs_g_per_100g": 0.1,
+    "fat_g_per_100g": 3.9
+  },
+  {
+    "id": 335,
+    "name_en": "Beef Kidney",
+    "name_ar": "كلية البقر",
+    "calories_per_100g": 99,
+    "protein_g_per_100g": 17.4,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 2.9
+  },
+  {
+    "id": 336,
+    "name_en": "Beef Tongue",
+    "name_ar": "لسان البقر",
+    "calories_per_100g": 224,
+    "protein_g_per_100g": 16.4,
+    "carbs_g_per_100g": 0.4,
+    "fat_g_per_100g": 16.1
+  },
+  {
+    "id": 337,
+    "name_en": "Nectarine",
+    "name_ar": "نكتارين",
+    "calories_per_100g": 44,
+    "protein_g_per_100g": 1.1,
+    "carbs_g_per_100g": 10.6,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 338,
+    "name_en": "Green Plums",
+    "name_ar": "برقوق أخضر",
+    "calories_per_100g": 39,
+    "protein_g_per_100g": 0.6,
+    "carbs_g_per_100g": 9.9,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 339,
+    "name_en": "Damson Plums",
+    "name_ar": "برقوق دامسون",
+    "calories_per_100g": 38,
+    "protein_g_per_100g": 0.5,
+    "carbs_g_per_100g": 9.6,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 340,
+    "name_en": "Yellow Peaches",
+    "name_ar": "خوخ أصفر",
+    "calories_per_100g": 39,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 9.5,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 341,
+    "name_en": "White Peaches",
+    "name_ar": "خوخ أبيض",
+    "calories_per_100g": 38,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 9.1,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 342,
+    "name_en": "Chinese Cabbage",
+    "name_ar": "ملفوف صيني",
+    "calories_per_100g": 13,
+    "protein_g_per_100g": 1.5,
+    "carbs_g_per_100g": 2.2,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 343,
+    "name_en": "Napa Cabbage",
+    "name_ar": "ملفوف نابا",
+    "calories_per_100g": 16,
+    "protein_g_per_100g": 1.2,
+    "carbs_g_per_100g": 3.2,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 344,
+    "name_en": "Baby Spinach",
+    "name_ar": "سبانخ صغير",
+    "calories_per_100g": 23,
+    "protein_g_per_100g": 2.9,
+    "carbs_g_per_100g": 3.6,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 345,
+    "name_en": "Mizuna",
+    "name_ar": "ميزونا",
+    "calories_per_100g": 21,
+    "protein_g_per_100g": 2.2,
+    "carbs_g_per_100g": 4.1,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 346,
+    "name_en": "Tatsoi",
+    "name_ar": "تاتسوي",
+    "calories_per_100g": 13,
+    "protein_g_per_100g": 2,
+    "carbs_g_per_100g": 2.3,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 347,
+    "name_en": "Fresh Ginger",
+    "name_ar": "زنجبيل طازج",
+    "calories_per_100g": 80,
+    "protein_g_per_100g": 1.8,
+    "carbs_g_per_100g": 18,
+    "fat_g_per_100g": 0.8
+  },
+  {
+    "id": 348,
+    "name_en": "Fresh Turmeric",
+    "name_ar": "كركم طازج",
+    "calories_per_100g": 39,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 8.9,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 349,
+    "name_en": "Horseradish",
+    "name_ar": "فجل حار",
+    "calories_per_100g": 48,
+    "protein_g_per_100g": 1.2,
+    "carbs_g_per_100g": 11.3,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 350,
+    "name_en": "Galangal",
+    "name_ar": "خولنجان",
+    "calories_per_100g": 71,
+    "protein_g_per_100g": 1,
+    "carbs_g_per_100g": 15,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 351,
+    "name_en": "Lemongrass",
+    "name_ar": "عشبة الليمون",
+    "calories_per_100g": 99,
+    "protein_g_per_100g": 1.8,
+    "carbs_g_per_100g": 25.3,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 352,
+    "name_en": "Nori (Seaweed)",
+    "name_ar": "نوري (أعشاب بحرية)",
+    "calories_per_100g": 35,
+    "protein_g_per_100g": 5.8,
+    "carbs_g_per_100g": 5.1,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 353,
+    "name_en": "Wakame",
+    "name_ar": "واكامي",
+    "calories_per_100g": 45,
+    "protein_g_per_100g": 3,
+    "carbs_g_per_100g": 9.1,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 354,
+    "name_en": "Kelp",
+    "name_ar": "عشب البحر",
+    "calories_per_100g": 43,
+    "protein_g_per_100g": 1.7,
+    "carbs_g_per_100g": 9.6,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 355,
+    "name_en": "Dulse",
+    "name_ar": "دولس",
+    "calories_per_100g": 81,
+    "protein_g_per_100g": 7.3,
+    "carbs_g_per_100g": 15.4,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 356,
+    "name_en": "Sea Lettuce",
+    "name_ar": "خس البحر",
+    "calories_per_100g": 45,
+    "protein_g_per_100g": 5.2,
+    "carbs_g_per_100g": 7.1,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 357,
+    "name_en": "Chia Seeds (Raw)",
+    "name_ar": "بذور الشيا خام",
+    "calories_per_100g": 486,
+    "protein_g_per_100g": 16.5,
+    "carbs_g_per_100g": 42.1,
+    "fat_g_per_100g": 30.7
+  },
+  {
+    "id": 358,
+    "name_en": "Hemp Seeds (Raw)",
+    "name_ar": "بذور القنب خام",
+    "calories_per_100g": 553,
+    "protein_g_per_100g": 31,
+    "carbs_g_per_100g": 4.7,
+    "fat_g_per_100g": 48.8
+  },
+  {
+    "id": 359,
+    "name_en": "Amaranth (Raw)",
+    "name_ar": "قطيفة خام",
+    "calories_per_100g": 371,
+    "protein_g_per_100g": 13.6,
+    "carbs_g_per_100g": 65.3,
+    "fat_g_per_100g": 7
+  },
+  {
+    "id": 360,
+    "name_en": "Teff (Raw)",
+    "name_ar": "تيف خام",
+    "calories_per_100g": 367,
+    "protein_g_per_100g": 13.3,
+    "carbs_g_per_100g": 73,
+    "fat_g_per_100g": 2.4
+  },
+  {
+    "id": 361,
+    "name_en": "Sorghum (Raw)",
+    "name_ar": "ذرة رفيعة خام",
+    "calories_per_100g": 339,
+    "protein_g_per_100g": 11,
+    "carbs_g_per_100g": 74.6,
+    "fat_g_per_100g": 3.3
+  },
+  {
+    "id": 362,
+    "name_en": "Flaxseed Oil",
+    "name_ar": "زيت بذر الكتان",
+    "calories_per_100g": 884,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 100
+  },
+  {
+    "id": 363,
+    "name_en": "Walnut Oil",
+    "name_ar": "زيت الجوز",
+    "calories_per_100g": 884,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 100
+  },
+  {
+    "id": 364,
+    "name_en": "Grapeseed Oil",
+    "name_ar": "زيت بذور العنب",
+    "calories_per_100g": 884,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 100
+  },
+  {
+    "id": 365,
+    "name_en": "Pumpkin Seed Oil",
+    "name_ar": "زيت بذور اليقطين",
+    "calories_per_100g": 884,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 100
+  },
+  {
+    "id": 366,
+    "name_en": "Macadamia Oil",
+    "name_ar": "زيت المكاداميا",
+    "calories_per_100g": 884,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 100
+  },
+  {
+    "id": 367,
+    "name_en": "Honey",
+    "name_ar": "عسل",
+    "calories_per_100g": 304,
+    "protein_g_per_100g": 0.3,
+    "carbs_g_per_100g": 82.4,
+    "fat_g_per_100g": 0
+  },
+  {
+    "id": 368,
+    "name_en": "Maple Syrup",
+    "name_ar": "شراب القيقب",
+    "calories_per_100g": 260,
+    "protein_g_per_100g": 0,
+    "carbs_g_per_100g": 67,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 369,
+    "name_en": "Agave Nectar",
+    "name_ar": "رحيق الأغاف",
+    "calories_per_100g": 310,
+    "protein_g_per_100g": 0.4,
+    "carbs_g_per_100g": 76.4,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 370,
+    "name_en": "Coconut Sugar",
+    "name_ar": "سكر جوز الهند",
+    "calories_per_100g": 375,
+    "protein_g_per_100g": 1,
+    "carbs_g_per_100g": 92,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 371,
+    "name_en": "Date Syrup",
+    "name_ar": "شراب التمر",
+    "calories_per_100g": 281,
+    "protein_g_per_100g": 0.4,
+    "carbs_g_per_100g": 75.8,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 372,
+    "name_en": "Persimmon",
+    "name_ar": "كاكي",
+    "calories_per_100g": 70,
+    "protein_g_per_100g": 0.6,
+    "carbs_g_per_100g": 18.6,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 373,
+    "name_en": "Fig (Fresh)",
+    "name_ar": "تين طازج",
+    "calories_per_100g": 74,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 19.2,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 374,
+    "name_en": "Pomelo",
+    "name_ar": "بوميلو",
+    "calories_per_100g": 38,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 9.6,
+    "fat_g_per_100g": 0
+  },
+  {
+    "id": 375,
+    "name_en": "Custard Apple",
+    "name_ar": "تفاح كسترد",
+    "calories_per_100g": 94,
+    "protein_g_per_100g": 2.1,
+    "carbs_g_per_100g": 23.6,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 376,
+    "name_en": "Breadfruit",
+    "name_ar": "فاكهة الخبز",
+    "calories_per_100g": 103,
+    "protein_g_per_100g": 1.1,
+    "carbs_g_per_100g": 27.1,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 377,
+    "name_en": "Plantain (Raw)",
+    "name_ar": "موز الجنة خام",
+    "calories_per_100g": 122,
+    "protein_g_per_100g": 1.3,
+    "carbs_g_per_100g": 31.9,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 378,
+    "name_en": "Octopus",
+    "name_ar": "أخطبوط",
+    "calories_per_100g": 82,
+    "protein_g_per_100g": 14.9,
+    "carbs_g_per_100g": 2.2,
+    "fat_g_per_100g": 1
+  },
+  {
+    "id": 379,
+    "name_en": "Squid",
+    "name_ar": "حبار",
+    "calories_per_100g": 92,
+    "protein_g_per_100g": 15.6,
+    "carbs_g_per_100g": 3.1,
+    "fat_g_per_100g": 1.4
+  },
+  {
+    "id": 380,
+    "name_en": "Sea Urchin",
+    "name_ar": "قنفذ البحر",
+    "calories_per_100g": 172,
+    "protein_g_per_100g": 16.2,
+    "carbs_g_per_100g": 2.5,
+    "fat_g_per_100g": 4.2
+  },
+  {
+    "id": 381,
+    "name_en": "Sea Cucumber",
+    "name_ar": "خيار البحر",
+    "calories_per_100g": 56,
+    "protein_g_per_100g": 13,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 382,
+    "name_en": "Abalone",
+    "name_ar": "أبالون",
+    "calories_per_100g": 105,
+    "protein_g_per_100g": 17.1,
+    "carbs_g_per_100g": 6,
+    "fat_g_per_100g": 0.8
+  },
+  {
+    "id": 383,
+    "name_en": "Alfalfa Sprouts",
+    "name_ar": "براعم البرسيم",
+    "calories_per_100g": 23,
+    "protein_g_per_100g": 4,
+    "carbs_g_per_100g": 2.1,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 384,
+    "name_en": "Mung Bean Sprouts",
+    "name_ar": "براعم فول المونج",
+    "calories_per_100g": 30,
+    "protein_g_per_100g": 3,
+    "carbs_g_per_100g": 5.9,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 385,
+    "name_en": "Broccoli Sprouts",
+    "name_ar": "براعم البروكلي",
+    "calories_per_100g": 35,
+    "protein_g_per_100g": 2.8,
+    "carbs_g_per_100g": 5.5,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 386,
+    "name_en": "Radish Sprouts",
+    "name_ar": "براعم الفجل",
+    "calories_per_100g": 43,
+    "protein_g_per_100g": 3.8,
+    "carbs_g_per_100g": 3.6,
+    "fat_g_per_100g": 2.5
+  },
+  {
+    "id": 387,
+    "name_en": "Sunflower Sprouts",
+    "name_ar": "براعم دوار الشمس",
+    "calories_per_100g": 23,
+    "protein_g_per_100g": 2.4,
+    "carbs_g_per_100g": 4.4,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 388,
+    "name_en": "Pea Shoots",
+    "name_ar": "براعم البازلاء",
+    "calories_per_100g": 35,
+    "protein_g_per_100g": 2.8,
+    "carbs_g_per_100g": 6,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 389,
+    "name_en": "Black Rice (Cooked)",
+    "name_ar": "أرز أسود مطبوخ",
+    "calories_per_100g": 356,
+    "protein_g_per_100g": 8.9,
+    "carbs_g_per_100g": 72,
+    "fat_g_per_100g": 3.2
+  },
+  {
+    "id": 390,
+    "name_en": "Red Rice (Cooked)",
+    "name_ar": "أرز أحمر مطبوخ",
+    "calories_per_100g": 405,
+    "protein_g_per_100g": 7.9,
+    "carbs_g_per_100g": 86,
+    "fat_g_per_100g": 2.2
+  },
+  {
+    "id": 391,
+    "name_en": "Job's Tears (Cooked)",
+    "name_ar": "دموع أيوب مطبوخة",
+    "calories_per_100g": 158,
+    "protein_g_per_100g": 4.2,
+    "carbs_g_per_100g": 34.6,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 392,
+    "name_en": "Finger Millet (Cooked)",
+    "name_ar": "دخن الإصبع مطبوخ",
+    "calories_per_100g": 119,
+    "protein_g_per_100g": 2.5,
+    "carbs_g_per_100g": 27.5,
+    "fat_g_per_100g": 1.3
+  },
+  {
+    "id": 393,
+    "name_en": "Wild Rice (Raw)",
+    "name_ar": "أرز بري خام",
+    "calories_per_100g": 357,
+    "protein_g_per_100g": 14.7,
+    "carbs_g_per_100g": 75,
+    "fat_g_per_100g": 1.1
+  },
+  {
+    "id": 394,
+    "name_en": "Purslane",
+    "name_ar": "رجلة",
+    "calories_per_100g": 16,
+    "protein_g_per_100g": 2,
+    "carbs_g_per_100g": 3.4,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 395,
+    "name_en": "Lamb's Quarters",
+    "name_ar": "رجل الحمل",
+    "calories_per_100g": 43,
+    "protein_g_per_100g": 4.2,
+    "carbs_g_per_100g": 7.3,
+    "fat_g_per_100g": 0.8
+  },
+  {
+    "id": 396,
+    "name_en": "Dandelion Greens",
+    "name_ar": "أوراق الهندباء البرية",
+    "calories_per_100g": 45,
+    "protein_g_per_100g": 2.7,
+    "carbs_g_per_100g": 9.2,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 397,
+    "name_en": "Nettle",
+    "name_ar": "قراص",
+    "calories_per_100g": 42,
+    "protein_g_per_100g": 2.7,
+    "carbs_g_per_100g": 7.5,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 398,
+    "name_en": "Barramundi",
+    "name_ar": "باراموندي",
+    "calories_per_100g": 113,
+    "protein_g_per_100g": 22.6,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 2.4
+  },
+  {
+    "id": 399,
+    "name_en": "Rockfish",
+    "name_ar": "سمك الصخر",
+    "calories_per_100g": 109,
+    "protein_g_per_100g": 20.4,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 2.5
+  },
+  {
+    "id": 400,
+    "name_en": "Pompano",
+    "name_ar": "بومبانو",
+    "calories_per_100g": 164,
+    "protein_g_per_100g": 18.5,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 9.5
+  },
+  {
+    "id": 401,
+    "name_en": "Wahoo",
+    "name_ar": "واهو",
+    "calories_per_100g": 109,
+    "protein_g_per_100g": 25,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 0.9
+  },
+  {
+    "id": 402,
+    "name_en": "Amberjack",
+    "name_ar": "أمبرجاك",
+    "calories_per_100g": 152,
+    "protein_g_per_100g": 23.2,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 5.2
+  },
+  {
+    "id": 403,
+    "name_en": "John Dory",
+    "name_ar": "جون دوري",
+    "calories_per_100g": 96,
+    "protein_g_per_100g": 18.8,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 1.2
+  },
+  {
+    "id": 404,
+    "name_en": "Turbot",
+    "name_ar": "توربوت",
+    "calories_per_100g": 95,
+    "protein_g_per_100g": 16.8,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 2.9
+  },
+  {
+    "id": 405,
+    "name_en": "Skate",
+    "name_ar": "سكيت",
+    "calories_per_100g": 98,
+    "protein_g_per_100g": 21.5,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 0.9
+  },
+  {
+    "id": 406,
+    "name_en": "Lingcod",
+    "name_ar": "لينجكود",
+    "calories_per_100g": 85,
+    "protein_g_per_100g": 17.7,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 1.1
+  },
+  {
+    "id": 407,
+    "name_en": "Bluefish",
+    "name_ar": "سمك أزرق",
+    "calories_per_100g": 124,
+    "protein_g_per_100g": 20.0,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 4.2
+  },
+  {
+    "id": 408,
+    "name_en": "Radicchio",
+    "name_ar": "راديكيو",
+    "calories_per_100g": 23,
+    "protein_g_per_100g": 1.4,
+    "carbs_g_per_100g": 4.5,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 409,
+    "name_en": "Belgian Endive",
+    "name_ar": "هندباء بلجيكية",
+    "calories_per_100g": 17,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 4,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 410,
+    "name_en": "Frisee",
+    "name_ar": "فريزي",
+    "calories_per_100g": 16,
+    "protein_g_per_100g": 1.3,
+    "carbs_g_per_100g": 3.4,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 411,
+    "name_en": "Escarole",
+    "name_ar": "إسكارول",
+    "calories_per_100g": 17,
+    "protein_g_per_100g": 1.3,
+    "carbs_g_per_100g": 3.4,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 412,
+    "name_en": "Daikon Radish",
+    "name_ar": "فجل دايكون",
+    "calories_per_100g": 18,
+    "protein_g_per_100g": 0.6,
+    "carbs_g_per_100g": 4.1,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 413,
+    "name_en": "Water Chestnuts",
+    "name_ar": "كستناء الماء",
+    "calories_per_100g": 97,
+    "protein_g_per_100g": 1.4,
+    "carbs_g_per_100g": 23.9,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 414,
+    "name_en": "Bamboo Shoots",
+    "name_ar": "براعم الخيزران",
+    "calories_per_100g": 27,
+    "protein_g_per_100g": 2.6,
+    "carbs_g_per_100g": 5.2,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 415,
+    "name_en": "Hearts of Palm",
+    "name_ar": "قلوب النخيل",
+    "calories_per_100g": 28,
+    "protein_g_per_100g": 2.7,
+    "carbs_g_per_100g": 4.6,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 416,
+    "name_en": "Chayote",
+    "name_ar": "تشايوتي",
+    "calories_per_100g": 19,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 4.5,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 417,
+    "name_en": "Cactus Pads (Nopales)",
+    "name_ar": "أوراق الصبار",
+    "calories_per_100g": 16,
+    "protein_g_per_100g": 1.3,
+    "carbs_g_per_100g": 3.3,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 418,
+    "name_en": "Quince",
+    "name_ar": "سفرجل",
+    "calories_per_100g": 57,
+    "protein_g_per_100g": 0.4,
+    "carbs_g_per_100g": 15.3,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 419,
+    "name_en": "Medlar",
+    "name_ar": "مدلار",
+    "calories_per_100g": 39,
+    "protein_g_per_100g": 0.4,
+    "carbs_g_per_100g": 10.3,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 420,
+    "name_en": "Jujube",
+    "name_ar": "عناب",
+    "calories_per_100g": 79,
+    "protein_g_per_100g": 1.2,
+    "carbs_g_per_100g": 20.2,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 421,
+    "name_en": "Tamarind",
+    "name_ar": "تمر هندي",
+    "calories_per_100g": 239,
+    "protein_g_per_100g": 2.8,
+    "carbs_g_per_100g": 62.5,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 422,
+    "name_en": "Cactus Fruit (Prickly Pear)",
+    "name_ar": "ثمرة الصبار",
+    "calories_per_100g": 41,
+    "protein_g_per_100g": 0.7,
+    "carbs_g_per_100g": 9.6,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 423,
+    "name_en": "Horned Melon",
+    "name_ar": "شمام قرني",
+    "calories_per_100g": 44,
+    "protein_g_per_100g": 1.8,
+    "carbs_g_per_100g": 7.6,
+    "fat_g_per_100g": 1.3
+  },
+  {
+    "id": 424,
+    "name_en": "Buddha's Hand",
+    "name_ar": "يد بوذا",
+    "calories_per_100g": 43,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 11.1,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 425,
+    "name_en": "Ugli Fruit",
+    "name_ar": "فاكهة أوجلي",
+    "calories_per_100g": 45,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 11.9,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 426,
+    "name_en": "Feijoa",
+    "name_ar": "فيجوا",
+    "calories_per_100g": 55,
+    "protein_g_per_100g": 1.2,
+    "carbs_g_per_100g": 13,
+    "fat_g_per_100g": 0.8
+  },
+  {
+    "id": 427,
+    "name_en": "Acerola",
+    "name_ar": "أسيرولا",
+    "calories_per_100g": 32,
+    "protein_g_per_100g": 0.4,
+    "carbs_g_per_100g": 7.7,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 428,
+    "name_en": "Lotus Seeds",
+    "name_ar": "بذور اللوتس",
+    "calories_per_100g": 89,
+    "protein_g_per_100g": 4.1,
+    "carbs_g_per_100g": 17.3,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 429,
+    "name_en": "Poppy Seeds",
+    "name_ar": "بذور الخشخاش",
+    "calories_per_100g": 525,
+    "protein_g_per_100g": 17.9,
+    "carbs_g_per_100g": 28.1,
+    "fat_g_per_100g": 41.6
+  },
+  {
+    "id": 430,
+    "name_en": "Nigella Seeds",
+    "name_ar": "حبة البركة",
+    "calories_per_100g": 375,
+    "protein_g_per_100g": 17.8,
+    "carbs_g_per_100g": 52.5,
+    "fat_g_per_100g": 15
+  },
+  {
+    "id": 431,
+    "name_en": "Fennel Seeds",
+    "name_ar": "بذور الشمر",
+    "calories_per_100g": 345,
+    "protein_g_per_100g": 15.8,
+    "carbs_g_per_100g": 52.3,
+    "fat_g_per_100g": 14.9
+  },
+  {
+    "id": 432,
+    "name_en": "Coriander Seeds",
+    "name_ar": "بذور الكزبرة",
+    "calories_per_100g": 298,
+    "protein_g_per_100g": 12.4,
+    "carbs_g_per_100g": 54.2,
+    "fat_g_per_100g": 17.8
+  },
+  {
+    "id": 433,
+    "name_en": "Caraway Seeds",
+    "name_ar": "بذور الكراوية",
+    "calories_per_100g": 333,
+    "protein_g_per_100g": 19.8,
+    "carbs_g_per_100g": 49.9,
+    "fat_g_per_100g": 14.6
+  },
+  {
+    "id": 434,
+    "name_en": "Cumin Seeds",
+    "name_ar": "بذور الكمون",
+    "calories_per_100g": 375,
+    "protein_g_per_100g": 17.8,
+    "carbs_g_per_100g": 44.2,
+    "fat_g_per_100g": 22.3
+  },
+  {
+    "id": 435,
+    "name_en": "Fenugreek Seeds",
+    "name_ar": "بذور الحلبة",
+    "calories_per_100g": 323,
+    "protein_g_per_100g": 23,
+    "carbs_g_per_100g": 58.4,
+    "fat_g_per_100g": 6.4
+  },
+  {
+    "id": 436,
+    "name_en": "Mustard Seeds",
+    "name_ar": "بذور الخردل",
+    "calories_per_100g": 508,
+    "protein_g_per_100g": 26.1,
+    "carbs_g_per_100g": 28.1,
+    "fat_g_per_100g": 36.2
+  },
+  {
+    "id": 437,
+    "name_en": "Anise Seeds",
+    "name_ar": "بذور اليانسون",
+    "calories_per_100g": 337,
+    "protein_g_per_100g": 17.6,
+    "carbs_g_per_100g": 50,
+    "fat_g_per_100g": 15.9
+  },
+  {
+    "id": 438,
+    "name_en": "Cricket Flour",
+    "name_ar": "دقيق الصراصير",
+    "calories_per_100g": 444,
+    "protein_g_per_100g": 65.5,
+    "carbs_g_per_100g": 5.1,
+    "fat_g_per_100g": 15.5
+  },
+  {
+    "id": 439,
+    "name_en": "Protein Isolate (Pea)",
+    "name_ar": "عزل بروتين البازلاء",
+    "calories_per_100g": 375,
+    "protein_g_per_100g": 85,
+    "carbs_g_per_100g": 7,
+    "fat_g_per_100g": 2
+  },
+  {
+    "id": 440,
+    "name_en": "Collagen Powder",
+    "name_ar": "مسحوق الكولاجين",
+    "calories_per_100g": 381,
+    "protein_g_per_100g": 90,
+    "carbs_g_per_100g": 0,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 441,
+    "name_en": "Egg Protein Powder",
+    "name_ar": "مسحوق بروتين البيض",
+    "calories_per_100g": 375,
+    "protein_g_per_100g": 81.1,
+    "carbs_g_per_100g": 4.4,
+    "fat_g_per_100g": 0
+  },
+  {
+    "id": 442,
+    "name_en": "Casein Protein",
+    "name_ar": "بروتين الكازين",
+    "calories_per_100g": 373,
+    "protein_g_per_100g": 81,
+    "carbs_g_per_100g": 5.3,
+    "fat_g_per_100g": 1.3
+  },
+  {
+    "id": 443,
+    "name_en": "Buffalo Milk",
+    "name_ar": "حليب الجاموس",
+    "calories_per_100g": 97,
+    "protein_g_per_100g": 3.7,
+    "carbs_g_per_100g": 5.2,
+    "fat_g_per_100g": 6.9
+  },
+  {
+    "id": 444,
+    "name_en": "Sheep Milk",
+    "name_ar": "حليب الغنم",
+    "calories_per_100g": 108,
+    "protein_g_per_100g": 5.4,
+    "carbs_g_per_100g": 5.4,
+    "fat_g_per_100g": 7
+  },
+  {
+    "id": 445,
+    "name_en": "Camel Milk",
+    "name_ar": "حليب الجمل",
+    "calories_per_100g": 46,
+    "protein_g_per_100g": 2.9,
+    "carbs_g_per_100g": 4.4,
+    "fat_g_per_100g": 2.1
+  },
+  {
+    "id": 446,
+    "name_en": "A2 Milk",
+    "name_ar": "حليب A2",
+    "calories_per_100g": 61,
+    "protein_g_per_100g": 3.2,
+    "carbs_g_per_100g": 4.8,
+    "fat_g_per_100g": 3.3
+  },
+  {
+    "id": 447,
+    "name_en": "Yak Milk",
+    "name_ar": "حليب الياك",
+    "calories_per_100g": 102,
+    "protein_g_per_100g": 5.9,
+    "carbs_g_per_100g": 4.9,
+    "fat_g_per_100g": 6.5
+  },
+  {
+    "id": 448,
+    "name_en": "Tiger Nuts",
+    "name_ar": "لوز النمر",
+    "calories_per_100g": 496,
+    "protein_g_per_100g": 8,
+    "carbs_g_per_100g": 65,
+    "fat_g_per_100g": 25
+  },
+  {
+    "id": 449,
+    "name_en": "Candlenuts",
+    "name_ar": "جوز الشمع",
+    "calories_per_100g": 684,
+    "protein_g_per_100g": 7.7,
+    "carbs_g_per_100g": 3.3,
+    "fat_g_per_100g": 73.7
+  },
+  {
+    "id": 450,
+    "name_en": "Bunya Nuts",
+    "name_ar": "جوز بونيا",
+    "calories_per_100g": 598,
+    "protein_g_per_100g": 14,
+    "carbs_g_per_100g": 11,
+    "fat_g_per_100g": 53
+  },
+  {
+    "id": 451,
+    "name_en": "Sacha Inchi Seeds",
+    "name_ar": "بذور ساشا إنتشي",
+    "calories_per_100g": 553,
+    "protein_g_per_100g": 27,
+    "carbs_g_per_100g": 5,
+    "fat_g_per_100g": 48
+  },
+  {
+    "id": 452,
+    "name_en": "Watermelon Seeds",
+    "name_ar": "بذور البطيخ",
+    "calories_per_100g": 557,
+    "protein_g_per_100g": 28.3,
+    "carbs_g_per_100g": 15.3,
+    "fat_g_per_100g": 47.4
+  },
+  {
+    "id": 453,
+    "name_en": "Bee Pollen",
+    "name_ar": "حبوب اللقاح",
+    "calories_per_100g": 314,
+    "protein_g_per_100g": 23,
+    "carbs_g_per_100g": 40,
+    "fat_g_per_100g": 5
+  },
+  {
+    "id": 454,
+    "name_en": "Royal Jelly",
+    "name_ar": "غذاء ملكات النحل",
+    "calories_per_100g": 147,
+    "protein_g_per_100g": 11,
+    "carbs_g_per_100g": 11,
+    "fat_g_per_100g": 6
+  },
+  {
+    "id": 455,
+    "name_en": "Chlorella",
+    "name_ar": "كلوريلا",
+    "calories_per_100g": 290,
+    "protein_g_per_100g": 58,
+    "carbs_g_per_100g": 23,
+    "fat_g_per_100g": 7
+  },
+  {
+    "id": 456,
+    "name_en": "Wheatgrass Powder",
+    "name_ar": "مسحوق عشبة القمح",
+    "calories_per_100g": 198,
+    "protein_g_per_100g": 24,
+    "carbs_g_per_100g": 42,
+    "fat_g_per_100g": 3.3
+  },
+  {
+    "id": 457,
+    "name_en": "Moringa Powder",
+    "name_ar": "مسحوق المورينجا",
+    "calories_per_100g": 205,
+    "protein_g_per_100g": 27.1,
+    "carbs_g_per_100g": 38.2,
+    "fat_g_per_100g": 2.3
+  },
+  {
+    "id": 458,
+    "name_en": "Bitter Melon",
+    "name_ar": "قرع مر",
+    "calories_per_100g": 17,
+    "protein_g_per_100g": 1,
+    "carbs_g_per_100g": 3.7,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 459,
+    "name_en": "Bottle Gourd",
+    "name_ar": "قرع الزجاجة",
+    "calories_per_100g": 14,
+    "protein_g_per_100g": 0.6,
+    "carbs_g_per_100g": 3.4,
+    "fat_g_per_100g": 0
+  },
+  {
+    "id": 460,
+    "name_en": "Snake Gourd",
+    "name_ar": "قرع الثعبان",
+    "calories_per_100g": 18,
+    "protein_g_per_100g": 0.5,
+    "carbs_g_per_100g": 4.4,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 461,
+    "name_en": "Ridge Gourd",
+    "name_ar": "قرع الحرف",
+    "calories_per_100g": 20,
+    "protein_g_per_100g": 1.2,
+    "carbs_g_per_100g": 4.4,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 462,
+    "name_en": "Ivy Gourd",
+    "name_ar": "قرع اللبلاب",
+    "calories_per_100g": 18,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 3.9,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 463,
+    "name_en": "Drumstick Leaves",
+    "name_ar": "أوراق المورينجا",
+    "calories_per_100g": 64,
+    "protein_g_per_100g": 9.4,
+    "carbs_g_per_100g": 8.3,
+    "fat_g_per_100g": 1.4
+  },
+  {
+    "id": 464,
+    "name_en": "Lotus Root",
+    "name_ar": "جذر اللوتس",
+    "calories_per_100g": 74,
+    "protein_g_per_100g": 2.6,
+    "carbs_g_per_100g": 17.2,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 465,
+    "name_en": "Plantain Flower",
+    "name_ar": "زهرة الموز",
+    "calories_per_100g": 51,
+    "protein_g_per_100g": 1.6,
+    "carbs_g_per_100g": 9.9,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 466,
+    "name_en": "Jackfruit Seeds",
+    "name_ar": "بذور الجاك فروت",
+    "calories_per_100g": 185,
+    "protein_g_per_100g": 6.6,
+    "carbs_g_per_100g": 38.4,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 467,
+    "name_en": "Amaranth Leaves",
+    "name_ar": "أوراق القطيفة",
+    "calories_per_100g": 23,
+    "protein_g_per_100g": 2.5,
+    "carbs_g_per_100g": 4.0,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 468,
+    "name_en": "Cassava Leaves",
+    "name_ar": "أوراق الكاسافا",
+    "calories_per_100g": 91,
+    "protein_g_per_100g": 6.8,
+    "carbs_g_per_100g": 17.0,
+    "fat_g_per_100g": 1.2
+  },
+  {
+    "id": 469,
+    "name_en": "Sweet Potato Leaves",
+    "name_ar": "أوراق البطاطا الحلوة",
+    "calories_per_100g": 35,
+    "protein_g_per_100g": 4.5,
+    "carbs_g_per_100g": 5.3,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 470,
+    "name_en": "Pumpkin Leaves",
+    "name_ar": "أوراق القرع",
+    "calories_per_100g": 19,
+    "protein_g_per_100g": 2.2,
+    "carbs_g_per_100g": 2.9,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 471,
+    "name_en": "Baobab Fruit",
+    "name_ar": "فاكهة الباوباب",
+    "calories_per_100g": 162,
+    "protein_g_per_100g": 2.3,
+    "carbs_g_per_100g": 38.2,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 472,
+    "name_en": "Marula Fruit",
+    "name_ar": "فاكهة مارولا",
+    "calories_per_100g": 48,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 11.3,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 473,
+    "name_en": "Miracle Fruit",
+    "name_ar": "فاكهة المعجزة",
+    "calories_per_100g": 53,
+    "protein_g_per_100g": 0.1,
+    "carbs_g_per_100g": 11.6,
+    "fat_g_per_100g": 1.0
+  },
+  {
+    "id": 474,
+    "name_en": "African Potato",
+    "name_ar": "بطاطس أفريقية",
+    "calories_per_100g": 142,
+    "protein_g_per_100g": 1.8,
+    "carbs_g_per_100g": 34.2,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 475,
+    "name_en": "Taro Leaves",
+    "name_ar": "أوراق القلقاس",
+    "calories_per_100g": 42,
+    "protein_g_per_100g": 5,
+    "carbs_g_per_100g": 6.7,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 476,
+    "name_en": "Plantain (Cooked)",
+    "name_ar": "موز الجنة مطبوخ",
+    "calories_per_100g": 116,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 31.2,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 477,
+    "name_en": "Green Papaya",
+    "name_ar": "بابايا خضراء",
+    "calories_per_100g": 39,
+    "protein_g_per_100g": 0.6,
+    "carbs_g_per_100g": 9.8,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 478,
+    "name_en": "Salak (Snake Fruit)",
+    "name_ar": "ثمرة الثعبان",
+    "calories_per_100g": 82,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 20.9,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 479,
+    "name_en": "Longan",
+    "name_ar": "لونغان",
+    "calories_per_100g": 60,
+    "protein_g_per_100g": 1.3,
+    "carbs_g_per_100g": 15.1,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 480,
+    "name_en": "Wood Apple",
+    "name_ar": "تفاح خشبي",
+    "calories_per_100g": 134,
+    "protein_g_per_100g": 7.1,
+    "carbs_g_per_100g": 31.2,
+    "fat_g_per_100g": 3.7
+  },
+  {
+    "id": 481,
+    "name_en": "Soursop",
+    "name_ar": "سورسوب",
+    "calories_per_100g": 66,
+    "protein_g_per_100g": 1,
+    "carbs_g_per_100g": 16.8,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 482,
+    "name_en": "Sugar Apple",
+    "name_ar": "تفاح السكر",
+    "calories_per_100g": 94,
+    "protein_g_per_100g": 2.1,
+    "carbs_g_per_100g": 23.6,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 483,
+    "name_en": "Ice Cream Bean",
+    "name_ar": "فول الآيس كريم",
+    "calories_per_100g": 55,
+    "protein_g_per_100g": 1.3,
+    "carbs_g_per_100g": 13.4,
+    "fat_g_per_100g": 0.4
+  },
+  {
+    "id": 484,
+    "name_en": "Caimito (Star Apple)",
+    "name_ar": "تفاح النجمة",
+    "calories_per_100g": 67,
+    "protein_g_per_100g": 2.3,
+    "carbs_g_per_100g": 14.6,
+    "fat_g_per_100g": 1.0
+  },
+  {
+    "id": 485,
+    "name_en": "Mamey Sapote",
+    "name_ar": "سابوتي المامي",
+    "calories_per_100g": 124,
+    "protein_g_per_100g": 1.5,
+    "carbs_g_per_100g": 32.1,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 486,
+    "name_en": "Black Sapote",
+    "name_ar": "سابوتي أسود",
+    "calories_per_100g": 134,
+    "protein_g_per_100g": 1.9,
+    "carbs_g_per_100g": 36.8,
+    "fat_g_per_100g": 0.6
+  },
+  {
+    "id": 487,
+    "name_en": "Cherimoya",
+    "name_ar": "شيريمويا",
+    "calories_per_100g": 75,
+    "protein_g_per_100g": 1.6,
+    "carbs_g_per_100g": 17.7,
+    "fat_g_per_100g": 0.7
+  },
+  {
+    "id": 488,
+    "name_en": "Atemoya",
+    "name_ar": "أتيمويا",
+    "calories_per_100g": 94,
+    "protein_g_per_100g": 2.1,
+    "carbs_g_per_100g": 23.6,
+    "fat_g_per_100g": 0.3
+  },
+  {
+    "id": 489,
+    "name_en": "Rambai",
+    "name_ar": "رامباي",
+    "calories_per_100g": 45,
+    "protein_g_per_100g": 0.7,
+    "carbs_g_per_100g": 11.5,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 490,
+    "name_en": "Langsat",
+    "name_ar": "لانجسات",
+    "calories_per_100g": 57,
+    "protein_g_per_100g": 0.8,
+    "carbs_g_per_100g": 14.3,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 491,
+    "name_en": "Pulasan",
+    "name_ar": "بولاسان",
+    "calories_per_100g": 51,
+    "protein_g_per_100g": 0.9,
+    "carbs_g_per_100g": 12.8,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 492,
+    "name_en": "Bignay",
+    "name_ar": "بيجناي",
+    "calories_per_100g": 46,
+    "protein_g_per_100g": 0.6,
+    "carbs_g_per_100g": 11.9,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 493,
+    "name_en": "Santol",
+    "name_ar": "سانتول",
+    "calories_per_100g": 91,
+    "protein_g_per_100g": 0.5,
+    "carbs_g_per_100g": 24.9,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 494,
+    "name_en": "Jabuticaba",
+    "name_ar": "جابوتيكابا",
+    "calories_per_100g": 45,
+    "protein_g_per_100g": 0.6,
+    "carbs_g_per_100g": 11.5,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 495,
+    "name_en": "Cacao Beans (Raw)",
+    "name_ar": "حبوب الكاكاو الخام",
+    "calories_per_100g": 456,
+    "protein_g_per_100g": 20,
+    "carbs_g_per_100g": 57,
+    "fat_g_per_100g": 14
+  },
+  {
+    "id": 496,
+    "name_en": "Vanilla Beans",
+    "name_ar": "حبوب الفانيليا",
+    "calories_per_100g": 288,
+    "protein_g_per_100g": 0.1,
+    "carbs_g_per_100g": 12.7,
+    "fat_g_per_100g": 0.1
+  },
+  {
+    "id": 497,
+    "name_en": "Black Turtle Beans",
+    "name_ar": "فاصولياء السلحفاة السوداء",
+    "calories_per_100g": 132,
+    "protein_g_per_100g": 8.9,
+    "carbs_g_per_100g": 23,
+    "fat_g_per_100g": 0.5
+  },
+  {
+    "id": 498,
+    "name_en": "Tepary Beans",
+    "name_ar": "فاصولياء تيباري",
+    "calories_per_100g": 343,
+    "protein_g_per_100g": 23,
+    "carbs_g_per_100g": 61,
+    "fat_g_per_100g": 1.1
+  },
+  {
+    "id": 499,
+    "name_en": "Runner Beans",
+    "name_ar": "فاصولياء العداء",
+    "calories_per_100g": 25,
+    "protein_g_per_100g": 2.4,
+    "carbs_g_per_100g": 4.2,
+    "fat_g_per_100g": 0.2
+  },
+  {
+    "id": 500,
+    "name_en": "Velvet Beans",
+    "name_ar": "فاصولياء المخمل",
+    "calories_per_100g": 395,
+    "protein_g_per_100g": 23.5,
+    "carbs_g_per_100g": 52,
+    "fat_g_per_100g": 6.8
+  }
+]
