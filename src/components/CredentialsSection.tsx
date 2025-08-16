@@ -10,7 +10,6 @@ interface CredentialsSectionProps {
 }
 
 export const CredentialsSection: React.FC<CredentialsSectionProps> = ({ language }) => {
-  const t = translations[language];
   const isRTL = language === 'ar';
   
   // State for credentials
@@ -75,10 +74,10 @@ export const CredentialsSection: React.FC<CredentialsSectionProps> = ({ language
     setGoogleAICredentials(googleAiApiKey);
   };
   
-  // Check if credentials are set
-  const isNutritionixConfigured = true; // Always configured with hardcoded keys
-  const isFatSecretConfigured = true; // Always configured with hardcoded keys  
-  const isGoogleAiConfigured = true; // Always configured with hardcoded keys
+  // Check if credentials are set (derive from current state so UI reflects real config)
+  const isNutritionixConfigured = Boolean(nutritionixAppId && nutritionixApiKey);
+  const isFatSecretConfigured = Boolean(fatSecretConsumerKey && fatSecretConsumerSecret);
+  const isGoogleAiConfigured = Boolean(googleAiApiKey);
   
   const getStatusIcon = (isConfigured: boolean) => {
     return isConfigured ? (

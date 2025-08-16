@@ -175,10 +175,9 @@ export const convertFatSecretToFoodItem = (
   let defaultUnit = 'g';
   let altMeasures: any[] = [];
 
-  if (details && details.food.servings && details.food.servings.serving) {
-    const servings = Array.isArray(details.food.servings.serving) 
-      ? details.food.servings.serving 
-      : [details.food.servings.serving];
+  if (details && details.food && details.food.servings && details.food.servings.serving) {
+    const servingsRaw = details.food.servings.serving;
+    const servings = Array.isArray(servingsRaw) ? servingsRaw : [servingsRaw];
     
     // Find the 100g serving or use the first serving to calculate per 100g
     let baseServing = servings.find(s => 
@@ -186,18 +185,23 @@ export const convertFatSecretToFoodItem = (
     ) || servings[0];
 
     if (baseServing) {
-      const servingAmount = parseFloat(baseServing.metric_serving_amount || '100');
-      const multiplier = 100 / servingAmount;
+      const servingAmount = parseFloat(baseServing.metric_serving_amount || baseServing.metric_serving_amount === '' ? '100' : '100');
+      const multiplier = servingAmount > 0 ? 100 / servingAmount : 1;
 
-      calories_per_100g = Math.round(parseFloat(baseServing.calories || '0') * multiplier);
-      protein_g_per_100g = Math.round(parseFloat(baseServing.protein || '0') * multiplier * 10) / 10;
-      carbs_g_per_100g = Math.round(parseFloat(baseServing.carbohydrate || '0') * multiplier * 10) / 10;
-      fat_g_per_100g = Math.round(parseFloat(baseServing.fat || '0') * multiplier * 10) / 10;
+      const cal = baseServing.calories || '0';
+      const prot = baseServing.protein || '0';
+      const carb = baseServing.carbohydrate || '0';
+      const f = baseServing.fat || '0';
+
+      calories_per_100g = Math.round(parseFloat(cal) * multiplier);
+      protein_g_per_100g = Math.round(parseFloat(prot) * multiplier * 10) / 10;
+      carbs_g_per_100g = Math.round(parseFloat(carb) * multiplier * 10) / 10;
+      fat_g_per_100g = Math.round(parseFloat(f) * multiplier * 10) / 10;
       
-      defaultUnit = baseServing.metric_serving_unit || 'g';
+      defaultUnit = baseServing.metric_serving_unit || baseServing.measurement_description || 'g';
 
-      // Convert all servings to alternative measures
-      altMeasures = servings.map((serving, index) => ({
+      // Convert all servings to alternative measures defensively
+      altMeasures = servings.map((serving: any, index: number) => ({
         serving_weight: parseFloat(serving.metric_serving_amount || '100'),
         measure: serving.measurement_description || serving.serving_description || `serving ${index + 1}`,
         seq: index + 1,

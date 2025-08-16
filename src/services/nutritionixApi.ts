@@ -33,8 +33,9 @@ interface NutritionixNutrientsResponse {
 const API_BASE_URL = 'https://trackapi.nutritionix.com/v2';
 
 // Dynamic credentials that can be set at runtime
-let APP_ID = import.meta.env.VITE_NUTRITIONIX_APP_ID || '67cc5cfc';
-let API_KEY = import.meta.env.VITE_NUTRITIONIX_API_KEY || 'c3e3e37fd07cf077893fc5e96c47ef29';
+// Default to user-provided credentials if env not set
+let APP_ID = import.meta.env.VITE_NUTRITIONIX_APP_ID || 'dac811e1';
+let API_KEY = import.meta.env.VITE_NUTRITIONIX_API_KEY || '81154a153e22a0cca3f680ba50152bec';
 
 // Function to set credentials dynamically
 export const setNutritionixCredentials = (appId: string, apiKey: string) => {
@@ -42,11 +43,7 @@ export const setNutritionixCredentials = (appId: string, apiKey: string) => {
   API_KEY = apiKey;
 };
 
-const headers = {
-  'x-app-id': APP_ID,
-  'x-app-key': API_KEY,
-  'Content-Type': 'application/json',
-};
+// headers are created per-request to pick up runtime credentials
 
 export const searchFoods = async (query: string): Promise<NutritionixFood[]> => {
   if (!query.trim()) return [];
@@ -64,19 +61,24 @@ export const searchFoods = async (query: string): Promise<NutritionixFood[]> => 
       'x-app-id': APP_ID,
       'x-app-key': API_KEY,
       'Content-Type': 'application/json',
+      'Accept': 'application/json'
     };
-    
+
     const response = await fetch(`${API_BASE_URL}/search/instant?query=${encodeURIComponent(query)}`, {
       method: 'GET',
       headers: requestHeaders,
     });
 
     if (!response.ok) {
-      throw new Error(`API request failed: ${response.status}`);
+      const body = await response.text().catch(() => '');
+      const msg = `API request failed: ${response.status} ${response.statusText} ${body ? '- ' + body : ''}`;
+      // Provide more explicit error for 401 to help diagnostics
+      if (response.status === 401) console.error('[Nutritionix] Unauthorized (401). Check App ID / API Key and CORS settings. Response body:', body);
+      throw new Error(msg);
     }
 
     const data: NutritionixSearchResponse = await response.json();
-    console.log('API Response:', data);
+    console.log('[Nutritionix] API Response:', data);
     
     // Combine common and branded foods, limit to 20 results
     const allFoods = [...data.common, ...data.branded].slice(0, 20);
@@ -101,8 +103,8 @@ export const getFoodNutrients = async (foodName: string, servingQty?: number, se
       'x-app-id': APP_ID,
       'x-app-key': API_KEY,
       'Content-Type': 'application/json',
+      'Accept': 'application/json'
     };
-    
     // Build query with serving information if available
     const query = servingQty && servingUnit ? 
       `${servingQty} ${servingUnit} ${foodName}` : 
@@ -117,11 +119,14 @@ export const getFoodNutrients = async (foodName: string, servingQty?: number, se
     });
 
     if (!response.ok) {
-      throw new Error(`API request failed: ${response.status}`);
+      const body = await response.text().catch(() => '');
+      const msg = `API request failed: ${response.status} ${response.statusText} ${body ? '- ' + body : ''}`;
+      if (response.status === 401) console.error('[Nutritionix] Unauthorized (401) when fetching nutrients. Response body:', body);
+      throw new Error(msg);
     }
 
     const data: NutritionixNutrientsResponse = await response.json();
-    console.log('Nutrients API Response:', data);
+    console.log('[Nutritionix] Nutrients API Response:', data);
     
     return data.foods[0] || null;
   } catch (error) {

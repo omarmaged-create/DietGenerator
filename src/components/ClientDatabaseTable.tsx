@@ -11,7 +11,7 @@ import {
   SavedClient 
 } from '../services/clientDatabase';
 import { ClientData, FoodItem } from '../utils/calculations';
-import { translations, Language } from '../utils/translations';
+import { Language } from '../utils/translations';
 import { generatePDF } from '../utils/pdfGenerator';
 import toast from 'react-hot-toast';
 
@@ -42,7 +42,6 @@ export const ClientDatabaseTable: React.FC<ClientDatabaseTableProps> = ({
   onLoadClient,
   language
 }) => {
-  const t = translations[language];
   const isRTL = language === 'ar';
   const [savedClients, setSavedClients] = useState<SavedClient[]>([]);
   const [editingClient, setEditingClient] = useState<string | null>(null);
@@ -70,7 +69,7 @@ export const ClientDatabaseTable: React.FC<ClientDatabaseTableProps> = ({
         return;
       }
 
-      const clientId = saveClient(
+  saveClient(
         currentClientData,
         currentMeals,
         currentSelectedFoods,

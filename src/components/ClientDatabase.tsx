@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { Database, Download, Upload, Save, Trash2, Eye, FileText, Users, Calendar, Target, Utensils, Dumbbell } from 'lucide-react';
+import { Database, Download, Upload, Save, Trash2, Eye, FileText, Users, Calendar, Target } from 'lucide-react';
 import { 
   getSavedClients, 
   saveClient, 
   deleteClient, 
-  loadClient, 
+  
   exportClientsToExcel, 
   exportClientToJSON,
   importClientFromJSON,
   SavedClient 
 } from '../services/clientDatabase';
 import { ClientData, FoodItem } from '../utils/calculations';
-import { translations, Language } from '../utils/translations';
+import { Language } from '../utils/translations';
 import toast from 'react-hot-toast';
 
 interface ClientDatabaseProps {
@@ -41,7 +41,6 @@ export const ClientDatabase: React.FC<ClientDatabaseProps> = ({
   onLoadClient,
   language
 }) => {
-  const t = translations[language];
   const isRTL = language === 'ar';
   const [savedClients, setSavedClients] = useState<SavedClient[]>([]);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -69,7 +68,7 @@ export const ClientDatabase: React.FC<ClientDatabaseProps> = ({
         return;
       }
 
-      const clientId = saveClient(
+  saveClient(
         currentClientData,
         currentMeals,
         currentSelectedFoods,

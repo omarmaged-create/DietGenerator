@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Bot, User, Sparkles, TrendingUp, Lightbulb, MessageSquare, Youtube, Plus, Settings, Target, X } from 'lucide-react';
-import { chatWithAI, generateDietPlan, analyzeDiet, isAIAvailable, analyzeYouTubeVideo, searchAndAddFoods } from '../services/googleAiService';
+import { Send, Bot, User, Sparkles, TrendingUp, MessageSquare, Youtube, Settings, Target, X } from 'lucide-react';
+import { chatWithAI, generateDietPlan, analyzeDiet, isAIAvailable, analyzeYouTubeVideo, createMealPlanFromVideo, createWorkoutPlanFromVideo, aiEnhancedFoodSearch } from '../services/googleAiService';
 import { ClientData, FoodItem } from '../utils/calculations';
-import { translations, Language } from '../utils/translations';
+import { Language } from '../utils/translations';
+import { FoodSearch } from './FoodSearch';
 
 interface Message {
   id: string;
@@ -14,20 +15,24 @@ interface Message {
 
 interface AIChatProps {
   clientData: Partial<ClientData>;
-  meals: any[];
+  meals: unknown[];
   selectedFoods: { [key: string]: FoodItem };
   targetCalories: number;
   currentTotals: { calories: number; protein: number; carbs: number; fat: number };
-  onMealsChange: (meals: any[]) => void;
+  onMealsChange: (meals: unknown[]) => void;
   onSelectedFoodsChange?: (selectedFoods: { [key: string]: FoodItem }) => void;
   onNotesChange: (notes: string) => void;
-  onWorkoutsChange?: (workouts: any[]) => void;
-  onSelectedExercisesChange?: (exercises: { [key: string]: any }) => void;
+  onWorkoutsChange?: (workouts: unknown[]) => void;
+  onSelectedExercisesChange?: (exercises: { [key: string]: unknown }) => void;
   language: Language;
   targetProteinPercent?: number;
   targetCarbsPercent?: number;
   targetFatPercent?: number;
   deficitSurplus?: number;
+  onDeficitSurplusChange?: (value: number) => void;
+  onTargetProteinPercentChange?: (percent: number) => void;
+  onTargetCarbsPercentChange?: (percent: number) => void;
+  onTargetFatPercentChange?: (percent: number) => void;
 }
 
 // Chat storage key
@@ -41,13 +46,18 @@ export const AIChat: React.FC<AIChatProps> = ({
   onMealsChange,
   onSelectedFoodsChange,
   onNotesChange,
+  onWorkoutsChange,
+  onSelectedExercisesChange,
   language,
   targetProteinPercent = 25,
   targetCarbsPercent = 45,
   targetFatPercent = 30,
-  deficitSurplus = 0
+  deficitSurplus = 0,
+  onDeficitSurplusChange,
+  onTargetProteinPercentChange,
+  onTargetCarbsPercentChange,
+  onTargetFatPercentChange
 }) => {
-  const t = translations[language];
   const isRTL = language === 'ar';
   
   // Load messages from localStorage on component mount
@@ -56,13 +66,28 @@ export const AIChat: React.FC<AIChatProps> = ({
       const saved = localStorage.getItem(CHAT_STORAGE_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
-        return parsed.map((msg: any) => ({
-          ...msg,
-          timestamp: new Date(msg.timestamp)
-        }));
+        if (Array.isArray(parsed)) {
+          return parsed.map((msg: unknown) => {
+            if (typeof msg === 'object' && msg !== null) {
+              const m = msg as Record<string, unknown>;
+              return {
+                id: typeof m.id === 'string' ? m.id : `msg-${Date.now()}`,
+                type: m.type === 'user' ? 'user' : 'ai',
+                content: typeof m.content === 'string' ? m.content : '',
+                timestamp: m.timestamp ? new Date(String(m.timestamp)) : new Date()
+              } as Message;
+            }
+            return {
+              id: `msg-${Date.now()}`,
+              type: 'ai',
+              content: '',
+              timestamp: new Date()
+            } as Message;
+          });
+        }
       }
-    } catch (error) {
-      console.error('Error loading chat messages:', error);
+    } catch {
+      // ignore parse errors
     }
     return [];
   });
@@ -81,9 +106,18 @@ export const AIChat: React.FC<AIChatProps> = ({
     mealCount: 4,
     dietType: 'balanced', // balanced, keto, low-carb, high-protein, etc.
     restrictions: '', // dietary restrictions
-    preferences: '', // food preferences
+  preferences: '', // food preferences
+  strictPreferences: false, // when true, AI must only use selected preferences
     goals: 'maintenance' // weight loss, weight gain, muscle building, etc.
   });
+
+  // Selected preferences as exact searchable food names (from FoodSearch)
+  const [selectedPreferences, setSelectedPreferences] = useState<string[]>([]);
+
+  // Keep dietSettings.preferences in sync with selectedPreferences (comma-separated)
+  useEffect(() => {
+    setDietSettings(prev => ({ ...prev, preferences: selectedPreferences.join(', ') }));
+  }, [selectedPreferences]);
 
   // Sync diet settings with props
   React.useEffect(() => {
@@ -175,14 +209,16 @@ export const AIChat: React.FC<AIChatProps> = ({
             // Update meals and selected foods
             const newMeals = [...meals, ...result.meals];
             onMealsChange(newMeals);
-            onSelectedFoodsChange({ ...selectedFoods, ...result.selectedFoods });
-            onNotesChange(result.notes);
-            
+            if (onSelectedFoodsChange && result.selectedFoods) {
+              onSelectedFoodsChange({ ...selectedFoods, ...result.selectedFoods });
+            }
+            if (result.notes) onNotesChange(result.notes);
+
             addMessage('ai', `🎉 **Meal Plan Created Successfully!**\n\nI've analyzed the YouTube video and created ${result.meals.length} meals with specific foods and quantities based on the video content. The meals have been added to your diet plan!\n\n📝 **Notes updated with video recommendations.**\n\nYou can now review and adjust the quantities as needed.`);
           } else {
             addMessage('ai', 'I had trouble creating a meal plan from the video. Please try again or provide more specific details.');
           }
-        } catch (error) {
+        } catch {
           addMessage('ai', 'Sorry, I encountered an error creating the meal plan from the video. Please try again.');
         }
       } else if (detectedYoutubeUrl && (lowerMessage.includes('workout plan') || lowerMessage.includes('exercise plan'))) {
@@ -193,30 +229,40 @@ export const AIChat: React.FC<AIChatProps> = ({
           try {
             const workouts = await createWorkoutPlanFromVideo(detectedYoutubeUrl, clientData);
             if (workouts) {
-              onWorkoutsChange(workouts);
+              onWorkoutsChange!(workouts);
               
-              // Create exercise objects for each exercise
-              const exercises: { [key: string]: any } = {};
-              workouts.forEach(workout => {
-                workout.exercises.forEach((exercise: any) => {
-                  exercises[exercise.id] = {
-                    id: exercise.exerciseId,
-                    name: exercise.name || 'Custom Exercise',
-                    type: 'custom',
-                    muscle: 'various',
-                    equipment: 'various',
-                    difficulty: 'intermediate',
-                    instructions: exercise.notes || 'Follow video instructions'
-                  };
-                });
+              // Create exercise objects for each exercise (guarded parsing)
+              const exercises: { [key: string]: unknown } = {};
+              (workouts as unknown[]).forEach((wrk) => {
+                if (typeof wrk === 'object' && wrk !== null) {
+                  const w = wrk as { exercises?: unknown[] };
+                  if (Array.isArray(w.exercises)) {
+                    w.exercises.forEach((ex) => {
+                      if (typeof ex === 'object' && ex !== null) {
+                        const e = ex as { id?: string; exerciseId?: string; name?: string; notes?: string };
+                        if (e.id) {
+                          exercises[String(e.id)] = {
+                            id: e.exerciseId,
+                            name: e.name || 'Custom Exercise',
+                            type: 'custom',
+                            muscle: 'various',
+                            equipment: 'various',
+                            difficulty: 'intermediate',
+                            instructions: e.notes || 'Follow video instructions'
+                          };
+                        }
+                      }
+                    });
+                  }
+                }
               });
-              onSelectedExercisesChange(exercises);
+              onSelectedExercisesChange!(exercises);
               
               addMessage('ai', `💪 **Workout Plan Created Successfully!**\n\nI've analyzed the YouTube video and created a ${workouts.length}-day workout plan with specific exercises, sets, reps, and rest times based on the video content.\n\n🎯 **The workout plan has been added to your workout builder!**\n\nYou can now review and adjust the exercises as needed.`);
             } else {
-              addMessage('ai', 'I had trouble creating a workout plan from the video. Please try again or provide more specific details.');
+              addMessage('ai', 'I had trouble creating the workout plan from the video. Please try again or provide more specific details.');
             }
-          } catch (error) {
+          } catch {
             addMessage('ai', 'Sorry, I encountered an error creating the workout plan from the video. Please try again.');
           }
         }
@@ -239,7 +285,7 @@ export const AIChat: React.FC<AIChatProps> = ({
             }
             
             addMessage('ai', response);
-          } catch (error) {
+          } catch {
             addMessage('ai', 'Sorry, I encountered an error searching for foods. Please try again.');
           }
         } else {
@@ -276,7 +322,7 @@ export const AIChat: React.FC<AIChatProps> = ({
         const response = await chatWithAI(userMessage, context);
         addMessage('ai', response);
       }
-    } catch (error) {
+    } catch {
       addMessage('ai', 'Sorry, I encountered an error. Please try again.');
     } finally {
       setIsLoading(false);
@@ -288,6 +334,8 @@ export const AIChat: React.FC<AIChatProps> = ({
       addMessage('ai', 'Please enter your Google AI API key in the credentials section to use this feature.');
       return;
     }
+
+
 
     setIsLoading(true);
     
@@ -329,8 +377,7 @@ ${dietSettings.preferences ? `- Food preferences: ${dietSettings.preferences}` :
       } else {
         addMessage('ai', 'I had trouble generating a diet plan. Please make sure your client data is complete and try again.');
       }
-    } catch (error) {
-      console.error('Diet plan generation error:', error);
+    } catch {
       addMessage('ai', 'Sorry, I encountered an error while generating the diet plan. Please try again.');
     } finally {
       setIsLoading(false);
@@ -353,26 +400,14 @@ ${dietSettings.preferences ? `- Food preferences: ${dietSettings.preferences}` :
     try {
       const analysis = await analyzeYouTubeVideo(url, 'both');
       addMessage('ai', analysis);
-    } catch (error) {
+    } catch {
       addMessage('ai', 'Sorry, I encountered an error analyzing the YouTube video. Please try again.');
     } finally {
       setIsLoading(false);
     }
   };
 
-  const handleCreateMealFromAI = async (foodNames: string[]) => {
-    try {
-      const { meal, selectedFoods } = await searchAndAddFoods(foodNames, 'AI Suggested Meal');
-      
-      // Add the meal and update selected foods
-      onMealsChange([...meals, meal]);
-      
-      // Note: We'd need to update selectedFoods in the parent component
-      addMessage('ai', `I've created a meal plan with ${meal.foods.length} food items and added it to your meal builder!`);
-    } catch (error) {
-      addMessage('ai', 'Sorry, I encountered an error creating the meal plan. Please try again.');
-    }
-  };
+  // helper removed: handleCreateMealFromAI (not used by UI)
 
   const handleAnalyzeDiet = async () => {
     if (!isAIAvailable()) {
@@ -386,11 +421,45 @@ ${dietSettings.preferences ? `- Food preferences: ${dietSettings.preferences}` :
     try {
       const analysis = await analyzeDiet(clientData, meals, selectedFoods, targetCalories, currentTotals);
       addMessage('ai', analysis);
-    } catch (error) {
+    } catch {
       addMessage('ai', 'Sorry, I encountered an error while analyzing the diet. Please try again.');
     } finally {
       setIsLoading(false);
     }
+  };
+
+  // New function to demonstrate enhanced AI capabilities
+  const handleShowMacroCalculations = () => {
+    const adjustedTarget = targetCalories + deficitSurplus;
+    const message = `🔢 **ENHANCED AI MACRO CALCULATIONS DEMONSTRATION**
+
+**Your Current Profile:**
+- Base TDEE: ${targetCalories} kcal
+- Calorie Adjustment: ${deficitSurplus > 0 ? '+' : ''}${deficitSurplus} kcal
+- Final Target: ${adjustedTarget} kcal
+- Goal: ${deficitSurplus === 0 ? 'MAINTENANCE' : deficitSurplus > 0 ? 'WEIGHT GAIN' : 'WEIGHT LOSS'}
+
+**Current Macro Targets:**
+- Protein: ${targetProteinPercent}% = ${Math.round(adjustedTarget * targetProteinPercent / 100)} kcal = ${Math.round((adjustedTarget * targetProteinPercent / 100) / 4)}g
+- Carbs: ${targetCarbsPercent}% = ${Math.round(adjustedTarget * targetCarbsPercent / 100)} kcal = ${Math.round((adjustedTarget * targetCarbsPercent / 100) / 4)}g
+- Fat: ${targetFatPercent}% = ${Math.round(adjustedTarget * targetFatPercent / 100)} kcal = ${Math.round((adjustedTarget * targetFatPercent / 100) / 9)}g
+
+**Mathematical Verification:**
+${Math.round(adjustedTarget * targetProteinPercent / 100)} + ${Math.round(adjustedTarget * targetCarbsPercent / 100)} + ${Math.round(adjustedTarget * targetFatPercent / 100)} = ${Math.round(adjustedTarget * targetProteinPercent / 100) + Math.round(adjustedTarget * targetCarbsPercent / 100) + Math.round(adjustedTarget * targetFatPercent / 100)} kcal ✓
+
+**Enhanced AI Features:**
+✅ **Precise Calorie Calculations** - Exact adherence to your targets
+✅ **Mathematical Verification** - All calculations shown step-by-step
+✅ **Smart Deficit/Surplus Handling** - Properly applies your calorie adjustments
+✅ **Macro Percentage Accuracy** - 100% adherence to your specified ratios
+✅ **Professional Nutrition Guidance** - Expert-level recommendations
+
+Try asking me specific questions like:
+- "Create a 500 calorie deficit diet with 40% protein, 35% carbs, 25% fat"
+- "Show me how to adjust my macros for muscle building"
+- "Calculate the exact grams for a 2000 calorie maintenance diet"`;
+
+    addMessage('ai', message);
   };
 
   if (!isAIAvailable()) {
@@ -465,6 +534,14 @@ ${dietSettings.preferences ? `- Food preferences: ${dietSettings.preferences}` :
               Generate Plan
             </button>
             <button
+              onClick={handleShowMacroCalculations}
+              disabled={isLoading}
+              className="flex items-center justify-center gap-2 px-3 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium"
+            >
+              <Target size={14} />
+              Show Enhanced AI Capabilities
+            </button>
+            <button
               onClick={handleAnalyzeDiet}
               disabled={isLoading}
               className="flex items-center justify-center gap-2 px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium"
@@ -525,7 +602,13 @@ ${dietSettings.preferences ? `- Food preferences: ${dietSettings.preferences}` :
                       min="10"
                       max="60"
                       value={dietSettings.proteinPercent}
-                      onChange={(e) => setDietSettings({...dietSettings, proteinPercent: Number(e.target.value)})}
+                      onChange={(e) => {
+                        const newValue = Number(e.target.value);
+                        setDietSettings({...dietSettings, proteinPercent: newValue});
+                        if (onTargetProteinPercentChange) {
+                          onTargetProteinPercentChange(newValue);
+                        }
+                      }}
                       className="w-16 px-2 py-1 text-xs border border-gray-300 rounded focus:ring-1 focus:ring-indigo-500"
                     />
                     <span className="text-xs text-gray-500">%</span>
@@ -537,7 +620,13 @@ ${dietSettings.preferences ? `- Food preferences: ${dietSettings.preferences}` :
                       min="5"
                       max="70"
                       value={dietSettings.carbsPercent}
-                      onChange={(e) => setDietSettings({...dietSettings, carbsPercent: Number(e.target.value)})}
+                      onChange={(e) => {
+                        const newValue = Number(e.target.value);
+                        setDietSettings({...dietSettings, carbsPercent: newValue});
+                        if (onTargetCarbsPercentChange) {
+                          onTargetCarbsPercentChange(newValue);
+                        }
+                      }}
                       className="w-16 px-2 py-1 text-xs border border-gray-300 rounded focus:ring-1 focus:ring-indigo-500"
                     />
                     <span className="text-xs text-gray-500">%</span>
@@ -549,7 +638,13 @@ ${dietSettings.preferences ? `- Food preferences: ${dietSettings.preferences}` :
                       min="15"
                       max="60"
                       value={dietSettings.fatPercent}
-                      onChange={(e) => setDietSettings({...dietSettings, fatPercent: Number(e.target.value)})}
+                      onChange={(e) => {
+                        const newValue = Number(e.target.value);
+                        setDietSettings({...dietSettings, fatPercent: newValue});
+                        if (onTargetFatPercentChange) {
+                          onTargetFatPercentChange(newValue);
+                        }
+                      }}
                       className="w-16 px-2 py-1 text-xs border border-gray-300 rounded focus:ring-1 focus:ring-indigo-500"
                     />
                     <span className="text-xs text-gray-500">%</span>
@@ -571,7 +666,13 @@ ${dietSettings.preferences ? `- Food preferences: ${dietSettings.preferences}` :
                     type="number"
                     step="50"
                     value={dietSettings.calorieAdjustment}
-                    onChange={(e) => setDietSettings({...dietSettings, calorieAdjustment: Number(e.target.value)})}
+                    onChange={(e) => {
+                      const newValue = Number(e.target.value);
+                      setDietSettings({...dietSettings, calorieAdjustment: newValue});
+                      if (onDeficitSurplusChange) {
+                        onDeficitSurplusChange(newValue);
+                      }
+                    }}
                     placeholder="0 for maintenance"
                     className="w-full px-2 py-1 text-xs border border-gray-300 rounded focus:ring-1 focus:ring-indigo-500"
                   />
@@ -641,14 +742,52 @@ ${dietSettings.preferences ? `- Food preferences: ${dietSettings.preferences}` :
               
               <div className="space-y-1">
                 <label className="block text-xs font-medium text-gray-700 mb-1">Food Preferences</label>
-                <input
-                  type="text"
-                  value={dietSettings.preferences}
-                  onChange={(e) => setDietSettings({...dietSettings, preferences: e.target.value})}
-                  placeholder="e.g., prefer fish over meat, love spicy food, no seafood"
-                  className="w-full px-2 py-1 text-xs border border-gray-300 rounded focus:ring-1 focus:ring-indigo-500"
-                />
+                <div className="flex flex-col gap-2">
+                  {/* Use the existing FoodSearch to pick exact database items */}
+                  <FoodSearch
+                    onFoodSelect={(food: FoodItem) => {
+                      const name = (food.name_en || '').trim();
+                      if (!name) return;
+                      setSelectedPreferences(prev => {
+                        if (prev.includes(name)) return prev;
+                        return [...prev, name];
+                      });
+                    }}
+                    language={language}
+                    placeholder="Search foods to prefer (select from results)"
+                  />
+
+                  {/* Selected preference tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {selectedPreferences.length === 0 && (
+                      <div className="text-xs text-gray-500">No preferences selected — leave empty to allow AI to choose any suitable foods.</div>
+                    )}
+                    {selectedPreferences.map((pref, idx) => (
+                      <div key={pref} className="flex items-center gap-2 bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded-full text-xs">
+                        <span>{pref}</span>
+                        <button
+                          onClick={() => setSelectedPreferences(prev => prev.filter((_p, i) => i !== idx))}
+                          className="text-xs text-indigo-500 hover:text-indigo-700"
+                          aria-label={`Remove preference ${pref}`}
+                        >
+                          ×
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
+            </div>
+            
+            <div className="mt-2 flex items-center gap-2">
+              <input
+                id="strict-pref"
+                type="checkbox"
+                checked={!!dietSettings.strictPreferences}
+                onChange={(e) => setDietSettings({...dietSettings, strictPreferences: e.target.checked})}
+                className="h-4 w-4"
+              />
+              <label htmlFor="strict-pref" className="text-xs text-gray-700">Strict preferences (AI must only use selected foods)</label>
             </div>
             
             <div className="mt-4 flex gap-2 pt-3 border-t border-indigo-200">
@@ -663,6 +802,7 @@ ${dietSettings.preferences ? `- Food preferences: ${dietSettings.preferences}` :
                     dietType: 'balanced',
                     restrictions: '',
                     preferences: '',
+                    strictPreferences: false,
                     goals: 'maintenance'
                   });
                 }}

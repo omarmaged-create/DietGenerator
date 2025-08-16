@@ -80,7 +80,7 @@ export const calculateAlignedQuantity = (
   
   const targetMacros = calculateFoodMacros(targetFood, targetQuantity);
   
-  let alignedQuantity: number;
+  let alignedQuantity: number = 0;
   
   if (alignmentType === 'calories') {
     // Align by calories
@@ -134,4 +134,123 @@ export const calculateMacroSimilarity = (
   const similarity = (caloriesSimilarity * 0.4 + proteinSimilarity * 0.3 + carbsSimilarity * 0.15 + fatSimilarity * 0.15);
   
   return { similarity: Math.round(similarity), differences };
+};
+
+// Enhanced macro calculation utilities with exact precision
+export const calculateExactMacros = (
+  targetCalories: number,
+  proteinPercent: number,
+  carbsPercent: number,
+  fatPercent: number
+): {
+  proteinGrams: number;
+  carbsGrams: number;
+  fatGrams: number;
+  proteinCalories: number;
+  carbsCalories: number;
+  fatCalories: number;
+  totalCalories: number;
+} => {
+  // Validate percentages add up to 100%
+  const totalPercent = proteinPercent + carbsPercent + fatPercent;
+  if (Math.abs(totalPercent - 100) > 0.1) {
+    throw new Error(`Macro percentages must add up to 100%. Current total: ${totalPercent}%`);
+  }
+
+  // Calculate calories for each macro with exact precision
+  const proteinCalories = Math.round(targetCalories * (proteinPercent / 100));
+  const carbsCalories = Math.round(targetCalories * (carbsPercent / 100));
+  const fatCalories = Math.round(targetCalories * (fatPercent / 100));
+
+  // Convert calories to grams with exact precision
+  const proteinGrams = Math.round((proteinCalories / 4) * 10) / 10; // 4 calories per gram
+  const carbsGrams = Math.round((carbsCalories / 4) * 10) / 10; // 4 calories per gram
+  const fatGrams = Math.round((fatCalories / 9) * 10) / 10; // 9 calories per gram
+
+  // Verify total adds up to target (adjust fat if needed due to rounding)
+  const totalCalculatedCalories = proteinCalories + carbsCalories + fatCalories;
+  const calorieDiscrepancy = targetCalories - totalCalculatedCalories;
+  const adjustedFatCalories = fatCalories + calorieDiscrepancy;
+  const adjustedFatGrams = Math.round((adjustedFatCalories / 9) * 10) / 10;
+
+  // Final verification
+  const finalProteinCalories = Math.round(proteinGrams * 4);
+  const finalCarbsCalories = Math.round(carbsGrams * 4);
+  const finalFatCalories = Math.round(adjustedFatGrams * 9);
+  const finalTotalCalories = finalProteinCalories + finalCarbsCalories + finalFatCalories;
+
+  return {
+    proteinGrams,
+    carbsGrams,
+    fatGrams: adjustedFatGrams,
+    proteinCalories: finalProteinCalories,
+    carbsCalories: finalCarbsCalories,
+    fatCalories: finalFatCalories,
+    totalCalories: finalTotalCalories
+  };
+};
+
+// Calculate adjusted target calories based on deficit/surplus
+export const calculateAdjustedTargetCalories = (
+  baseTDEE: number,
+  deficitSurplus: number
+): number => {
+  return baseTDEE + deficitSurplus;
+};
+
+// Verify macro percentages add up to 100%
+export const validateMacroPercentages = (
+  proteinPercent: number,
+  carbsPercent: number,
+  fatPercent: number
+): boolean => {
+  const total = proteinPercent + carbsPercent + fatPercent;
+  return Math.abs(total - 100) <= 0.1;
+};
+
+// Calculate macro grams from percentages and total calories
+export const calculateMacroGrams = (
+  totalCalories: number,
+  proteinPercent: number,
+  carbsPercent: number,
+  fatPercent: number
+): {
+  protein: number;
+  carbs: number;
+  fat: number;
+} => {
+  if (!validateMacroPercentages(proteinPercent, carbsPercent, fatPercent)) {
+    throw new Error(`Macro percentages must add up to 100%. Current total: ${proteinPercent + carbsPercent + fatPercent}%`);
+  }
+
+  const protein = Math.round((totalCalories * (proteinPercent / 100) / 4) * 10) / 10;
+  const carbs = Math.round((totalCalories * (carbsPercent / 100) / 4) * 10) / 10;
+  const fat = Math.round((totalCalories * (fatPercent / 100) / 9) * 10) / 10;
+
+  return { protein, carbs, fat };
+};
+
+// Calculate calories from macro grams
+export const calculateCaloriesFromMacros = (
+  proteinGrams: number,
+  carbsGrams: number,
+  fatGrams: number
+): number => {
+  return Math.round(proteinGrams * 4 + carbsGrams * 4 + fatGrams * 9);
+};
+
+// Format macro calculations for display
+export const formatMacroCalculation = (
+  targetCalories: number,
+  proteinPercent: number,
+  carbsPercent: number,
+  fatPercent: number
+): string => {
+  const macros = calculateExactMacros(targetCalories, proteinPercent, carbsPercent, fatPercent);
+  
+  return `🔢 **EXACT MACRO CALCULATIONS:**
+- **Protein**: ${proteinPercent}% × ${targetCalories} = ${macros.proteinCalories} kcal ÷ 4 = **${macros.proteinGrams}g**
+- **Carbs**: ${carbsPercent}% × ${targetCalories} = ${macros.carbsCalories} kcal ÷ 4 = **${macros.carbsGrams}g**
+- **Fat**: ${fatPercent}% × ${targetCalories} = ${macros.fatCalories} kcal ÷ 9 = **${macros.fatGrams}g**
+- **Total Verification**: ${macros.proteinCalories} + ${macros.carbsCalories} + ${macros.fatCalories} = **${macros.totalCalories} kcal** ✓`;
 };

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Toaster, toast } from 'react-hot-toast';
-import { Utensils, Dumbbell, Bot } from 'lucide-react';
+import { Utensils, Dumbbell, Bot, Users } from 'lucide-react';
 import { ClientDataForm } from './components/ClientDataForm';
 import { LiveDashboard } from './components/LiveDashboard';
 import { MealBuilder } from './components/MealBuilder';
@@ -11,7 +11,6 @@ import { AIChat } from './components/AIChat';
 import { LanguageToggle } from './components/LanguageToggle';
 import { CredentialsSection } from './components/CredentialsSection';
 import { ClientDatabaseTable } from './components/ClientDatabaseTable';
-import { Database, Users } from 'lucide-react';
 import { ClientData, calculateTDEE, FoodItem, calculateFoodMacros } from './utils/calculations';
 import { convertToGrams } from './utils/unitConversions';
 import { translations, Language } from './utils/translations';
@@ -73,7 +72,6 @@ function App() {
   
   // Move selectedFoods state management to App level
   const [selectedFoods, setSelectedFoods] = useState<{ [key: string]: FoodItem }>({});
-  const [selectedFoodsServingInfo, setSelectedFoodsServingInfo] = useState<{ [key: string]: any }>({});
   const [selectedExercises, setSelectedExercises] = useState<{ [key: string]: Exercise }>({});
   
   const handleFoodSelect = (foodEntryId: string, food: FoodItem) => {
@@ -82,14 +80,6 @@ function App() {
       ...prev,
       [foodEntryId]: food
     }));
-    
-    // Store serving info if available
-    if (food.servingInfo) {
-      setSelectedFoodsServingInfo(prev => ({
-        ...prev,
-        [foodEntryId]: food.servingInfo
-      }));
-    }
     
     console.log('Updated selectedFoods will be:', {
       ...selectedFoods,
@@ -300,7 +290,7 @@ function App() {
                 {/* Meal Builder */}
                 <MealBuilder
                   meals={meals}
-                  onMealsChange={setMeals}
+                  onMealsChange={(m: any[]) => setMeals(m as Meal[])}
                   selectedFoods={selectedFoods}
                   onFoodSelect={handleFoodSelect}
                   language={language}
@@ -318,7 +308,7 @@ function App() {
                 {/* Workout Builder */}
                 <WorkoutBuilder
                   workouts={workouts}
-                  onWorkoutsChange={setWorkouts}
+                  onWorkoutsChange={(w: any[]) => setWorkouts(w as DayWorkout[])}
                   selectedExercises={selectedExercises}
                   onExerciseSelect={handleExerciseSelect}
                   language={language}
@@ -333,19 +323,23 @@ function App() {
                   selectedFoods={selectedFoods}
                   targetCalories={targetCalories}
                   currentTotals={currentTotals}
-                  onMealsChange={setMeals}
-                  onSelectedFoodsChange={(newSelectedFoods) => {
+                  onMealsChange={(m: any[]) => setMeals(m as Meal[])}
+                  onSelectedFoodsChange={(newSelectedFoods: { [k: string]: any }) => {
                     console.log('AI Chat updating selectedFoods:', newSelectedFoods);
-                    setSelectedFoods(newSelectedFoods);
+                    setSelectedFoods(newSelectedFoods as { [key: string]: FoodItem });
                   }}
                   onNotesChange={setNotes}
-                  onWorkoutsChange={setWorkouts}
-                  onSelectedExercisesChange={setSelectedExercises}
+                  onWorkoutsChange={(w: any[]) => setWorkouts(w as DayWorkout[])}
+                  onSelectedExercisesChange={(e: { [k: string]: any }) => setSelectedExercises(e as { [key: string]: Exercise })}
                   language={language}
                   targetProteinPercent={targetProteinPercent}
                   targetCarbsPercent={targetCarbsPercent}
                   targetFatPercent={targetFatPercent}
                   deficitSurplus={deficitSurplus}
+                  onDeficitSurplusChange={setDeficitSurplus}
+                  onTargetProteinPercentChange={setTargetProteinPercent}
+                  onTargetCarbsPercentChange={setTargetCarbsPercent}
+                  onTargetFatPercentChange={setTargetFatPercent}
                 />
               </>
             ) : activeTab === 'database' ? (
